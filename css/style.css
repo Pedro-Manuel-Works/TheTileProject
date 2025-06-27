@@ -56,9 +56,10 @@ body {
 }
 
 .nav-logo img:first-child {
-  border: 2px dashed #b7aeae;
-  border-radius: 12px;
+ /* border: 2px dashed #b7aeae;*/
+  /*border-radius: 12px;*/
   padding: 4px;
+  height: 4rem;
 }
 
 
