@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Tile Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-banner">
+  <div class="marquee">
+    <div class="marquee-content">
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+      <span>10% de descuento con el código TILE • </span>
+    </div>
+  </div>
+</div>
+
+
+  <header class="navbar">
+    <nav class="nav-container">
+      <!-- Logo a la izquierda -->
+      <div class="nav-logo">
+        <img src="img/Logo3_TTP.png" alt="Logo" />
+        <img src="img/3DAzulejo.gif" alt="Animación" class="logo-gif" />
+      </div>
+
+      <!-- Secciones al centro -->
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#exposiciones">Exposiciones</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+
+      <!-- Icono a la derecha -->
+      <div class="nav-social">
+        <a href="#"><img src="img/Logo_Instagram.png" alt="Instagram" /></a>
+      </div>
+
+      <!-- Botón hamburguesa para móvil -->
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </nav>
+
+    <!-- Menú desplegable móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#exposiciones">Exposiciones</a>
+      <a href="#links">Links</a>
+    </div>
+  </header>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+
+  <section class="hero-fade">
+  <div class="fade-wrapper">
+    <img src="img/ImagenPrincipal.png" alt="Imagen 1" class="fade-img img1" />
+    <img src="img/2ImagenPrincipal.png" alt="Imagen 2" class="fade-img img2" />
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>

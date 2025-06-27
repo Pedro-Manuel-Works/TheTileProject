@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alumni Sans SC", sans-serif;
+}
+
+/* BANNER DE ARRIBA ANTES DE LA BARRA DE NAVEGACIÓN*/
+.top-banner {
+  background-color: #3a50da;
+  color: #fff;
+  padding: 6px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1001;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-loop 30s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*----------------------------------------------------------*/
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo img:first-child {
+  border: 2px dashed #b7aeae;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+/* LOGO */
+.nav-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin: 0.5rem 0.5rem;
+  
+}
+
+
+
+/* SECCIONES */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+  gap: 6rem;
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  
+}
+
+/* Línea animada al pasar el ratón */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* SOCIAL */
+.nav-social img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* TOGGLE BOTÓN */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MENÚ MÓVIL */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.mobile-menu a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu.open {
+  display: flex;
+  max-height: 300px; /* Altura animada */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links,
+  .nav-social {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    margin-right: auto;
+  }
+}
+
+
+/*Imagen principal*/
+.hero-fade {
+  width: 100vw;
+  height: 400px; /* Puedes ajustar el alto */
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.fade-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.fade-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transition: opacity 1s ease-in-out;
+}
+
+.img1 {
+  animation-name: fade1;
+}
+
+.img2 {
+  animation-name: fade2;
+}
+
+@keyframes fade1 {
+  0%, 40% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade2 {
+  0%, 40% {
+    opacity: 0;
+  }
+  50%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
