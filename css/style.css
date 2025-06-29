@@ -47,6 +47,9 @@ body {
 
 /*----------------------------------------------------------*/
 
+
+/*Barra de navegación*/
+
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
@@ -123,12 +126,7 @@ body {
 }
 
 
-/* SOCIAL */
-.nav-social img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
+
 
 /* TOGGLE BOTÓN */
 .nav-toggle {
@@ -138,6 +136,46 @@ body {
   border: none;
   cursor: pointer;
 }
+
+/* Botón "Haz tu pedido" */
+.pedido-btn {
+  background-color: #e63946;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-left: 1.5rem;
+}
+
+.pedido-btn:hover {
+  background-color: #d62839;
+}
+
+/* Adaptación responsive: con menú móvil */
+@media (max-width: 768px) {
+  .pedido-btn {
+    display: none; /* ocultamos en la barra principal */
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  /* Insertamos el botón dentro del menú móvil */
+  .mobile-menu a:last-of-type {
+    border-bottom: none;
+  }
+
+}
+
+/* Alternativa: mostrar button en móvil dentro del menú */
+.mobile-menu .pedido-btn {
+  display: block;
+  margin: 0.5rem 1rem;
+}
+
 
 /* MENÚ MÓVIL */
 .mobile-menu {
@@ -239,6 +277,349 @@ body {
     opacity: 0;
   }
 }
+
+
+/*SECCION DEBAJO DE LA IMAGEN PRINCIPAL*/
+
+.custom-section {
+  background-color: #3137e1;
+  color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  font-family: "Gantari", sans-serif;
+  max-width: 1200px;
+  width: 90%; /* Añadido para dar espacio horizontal en móviles */
+  box-sizing: border-box;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column; /* Móvil */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.image-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.text-content {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem; /* Margen lateral para evitar que el texto pegue con los bordes */
+  box-sizing: border-box;
+}
+
+.custom-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.custom-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px dashed white;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: white;
+  color: #111;
+}
+
+/* Escritorio */
+@media (min-width: 769px) {
+  .section-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image-content,
+  .text-content {
+    width: 50%;
+  }
+
+  .text-content {
+    text-align: left;
+    padding: 0 2rem;
+  }
+}
+
+/*Empleados*/
+
+.team-title img {
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-handle {
+  margin-top: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .team-member {
+    width: 45%;
+  }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+  .team-member {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .team-title img {
+    max-width: 80%;
+  }
+}
+
+
+/* Sección de llamada a la acción */
+.cta-section {
+  background-color: #3137e1;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px; /* ← este margen separa de la sección anterior */
+}
+
+.cta-title {
+  font-family: "Gantari", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  font-family: "Alumni Sans SC", sans-serif;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Adaptación a móvil (ya está adaptado, pero reforzamos por si acaso) */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Sección de beneficios */
+.benefits-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.benefit-box {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.benefit-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.benefit-box h3 {
+  font-size: 18px;
+  font-family: "Gantari", sans-serif;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.benefit-box p {
+  font-size: 14px;
+  color: #333;
+  font-family: "Alumni Sans SC", sans-serif;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .benefits-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .benefit-icon {
+    width: 40px;
+  }
+}
+
+/*footer*/
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Gantari', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* blanco sobre fondo oscuro */
+  transition: transform 0.2s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+
+@media (min-width: 600px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
