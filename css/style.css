@@ -1,0 +1,262 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* 🔵 Barra superior de aviso */
+.barra-superior {
+  background-color: #005ec3;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.80rem;
+}
+
+/* Barra de navegación principal */
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 10;
+}
+
+/* Secciones de navegación */
+.navegacion-izquierda,
+.navegacion-derecha,
+.navegacion-centro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navegacion-centro{
+  justify-content: center;
+  transform: translateX(-135px);
+}
+
+.navegacion-izquierda{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Enlaces de navegación */
+.barra-navegacion a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Botón de pedido */
+.boton-pedido {
+  padding: 0.4rem 0.8rem;
+  border: 2px solid blue;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-pedido:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* Logo centrado */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-logo {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Botón hamburguesa (solo móvil) */
+.menu-movil {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+
+/* Menú desplegable móvil */
+.menu-desplegable {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.menu-desplegable a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mostrar menú cuando activo */
+.menu-desplegable.activo {
+  display: flex;
+}
+
+/* 🎥 Sección del video principal */
+.video-principal {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.video-principal video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------------------------- */
+/* 📱 Responsive para móvil */
+/* -------------------------- */
+@media (max-width: 768px) {
+  /* Oculta las secciones de navegación */
+  .navegacion-izquierda,
+  .navegacion-centro,
+  .navegacion-derecha {
+    display: none;
+  }
+
+  /* Muestra botón hamburguesa */
+  .menu-movil {
+    display: block;
+    font-size: 1.8rem;
+    margin-left: auto;
+  }
+
+  /* Centra el logo con posición absoluta */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .barra-navegacion {
+    justify-content: space-between;
+  }
+
+  /* Ajusta video para móvil */
+  .video-principal video {
+    max-height: 300px;
+  }
+
+  /* Asegura visibilidad del header */
+  header {
+    background-color: white;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+/*FOOTER*/
+
+/* Footer */
+.footer {
+  background-color: white;
+  padding: 2rem;
+  border-top: 1px solid #ddd;
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 120px;
+}
+
+.footer-columna h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-columna a {
+  text-decoration: none;
+  color: blue;
+  font-weight: normal;
+}
+
+.footer-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 250px;
+}
+
+.boton-escribenos {
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-contacto p {
+  font-size: 0.9rem;
+  color: blue;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-columna,
+  .footer-contacto {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contacto {
+    margin-top: 2rem;
+  }
+}
