@@ -24,7 +24,7 @@ body {
 
 /* 🔵 Barra superior de aviso */
 .barra-superior {
-  background-color: #005ec3;
+ background-color: #005ec3;
   color: white;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -37,24 +37,25 @@ body {
   left: 0;
   width: 100%;
   z-index: 1001;
+  
 }
 
 /* Barra de navegación principal */
 .barra-navegacion {
- display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: white;
   border-bottom: 1px solid #ddd;
   position: fixed;
-  top: 32px;            
+  top: 32px;             /* 💡 depende del alto de .barra-superior */
   left: 0;
   width: 100%;
   z-index: 1000;
 }
 
-.inicio{
+.galeria{
   font-family: 'MiFuente', sans-serif;
 }
 
@@ -69,7 +70,7 @@ body {
 
 .navegacion-centro{
   justify-content: center;
-  transform: translateX(-90px);
+  transform: translateX(-135px);
 }
 
 .navegacion-izquierda{
@@ -77,7 +78,6 @@ body {
   align-items: center;
   gap: 3rem;
 }
-
 
 /* Enlaces de navegación */
 .barra-navegacion a {
@@ -93,7 +93,6 @@ body {
   border: 2px solid blue;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
-
 }
 
 .boton-pedido:hover {
@@ -113,6 +112,54 @@ body {
   object-fit: contain;
 }
 
+
+
+/*CUADRICULA*/
+
+/* Galería de imágenes */
+.galeria-contenedor {
+  padding-top: 150px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.cuadro-imagen {
+  background-color: #eee;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #ccc;
+  /*border-radius: 8px;*/
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Responsive: 2 columnas en tablets */
+@media (max-width: 992px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 columna en móviles */
+@media (max-width: 600px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 /* Botón hamburguesa (solo móvil) */
 .menu-movil {
   display: none;
@@ -129,12 +176,12 @@ body {
   flex-direction: column;
   background-color: white;
   padding: 1rem 2rem;
-  position: absolute;
-  top: 100%;
+  position: fixed; /* CAMBIADO */
+  top: 100px; /* AJUSTA según la altura de .barra-superior (32px) + .barra-navegacion (32px aprox) */
   width: 100%;
   left: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 5;
+  z-index: 1002; /* MÁS ALTO que barra-navegacion (1000) y barra-superior (1001) */
 }
 
 .menu-desplegable a {
@@ -150,12 +197,11 @@ body {
   display: flex;
 }
 
-/* Sección del video principal */
+/*Sección del video principal */
 .video-principal {
   width: 100%;
   overflow: hidden;
-  margin-top: 140px; 
-
+  margin-top: 0;
 }
 
 .video-principal video {

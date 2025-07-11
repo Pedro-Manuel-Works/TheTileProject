@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tile Project</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
-
-<div class="barra-superior">
+    <div class="barra-superior">
   *ENVÍOS GRATIS EN TODA ESPAÑA*
 </div>
 
@@ -16,8 +15,8 @@
   <header>
     <nav class="barra-navegacion">
       <div class="navegacion-izquierda">
-        <a href="index.html" class="inicio">Inicio</a>
-        <a href="galeria.html">Galería</a>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html" class="galeria">Galería</a>
         <a href="#expos">Expos</a>
         <a href="#sobre-nosotros">Sobre Nosotros</a>
       </div>
@@ -29,7 +28,6 @@
       </div>
 
       <div class="navegacion-derecha">
-        <a href="#contacto" class="boton-contacto">Contacto</a>
         <a href="#pedido" class="boton-pedido">Pide tu Azulejo</a>
       </div>
 
@@ -40,7 +38,7 @@
     <!-- Menú desplegable para móvil -->
     <div class="menu-desplegable" id="menuMovil">
       <a href="index.html">Inicio</a>
-      <a href="galeria">Galería</a>
+      <a href="galeria.html">Galería</a>
       <a href="#expos">Expos</a>
       <a href="#sobre-nosotros">Sobre Nosotros</a>
       <a href="#contacto">Contacto</a>
@@ -48,12 +46,19 @@
     </div>
   </header>
 
-    <section class="video-principal">
-  <video autoplay muted loop playsinline>
-    <source src="img/Video principal.mp4" type="video/mp4">
-    
-  </video>
-</section>
+  <!--Cuadrícula-->
+<main class="galeria-contenedor">
+  <div class="grid-galeria">
+    <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(1\).jpeg');"></div>
+    <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(2\).jpeg');"></div>
+    <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(3\).jpeg');"></div>
+    <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(4\).jpeg');"></div>
+    <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(5\).jpeg');"></div>
+    <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(6\).jpeg');"></div>
+  </div>
+</main>
+
+
 
 <footer class="footer">
   <div class="footer-contenido">
