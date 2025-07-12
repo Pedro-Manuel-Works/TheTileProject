@@ -22,7 +22,7 @@ body {
   color: #333;
 }
 
-/* 🔵 Barra superior de aviso */
+/* Barra superior de aviso */
 .barra-superior {
   background-color: #005ec3;
   color: white;
@@ -205,6 +205,42 @@ body {
     position: relative;
     z-index: 10;
   }
+
+}
+
+/* Logo solo visible en móvil (oculto en escritorio) */
+.logo-movil {
+  display: flex;
+  align-items: center;
+}
+
+.imagen-logo-movil {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* En escritorio, ocultar el logo-móvil */
+@media (min-width: 769px) {
+  .logo-movil {
+    display: none;
+  }
+}
+
+/* En móvil, ocultar el logo centrado */
+@media (max-width: 768px) {
+  .navegacion-centro {
+    display: none;
+  }
+
+  .imagen-logo-movil {
+    height: 50px;
+  }
+
+  .navegacion-izquierda {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 /*FOOTER*/
@@ -287,3 +323,5 @@ body {
     margin-top: 2rem;
   }
 }
+
+

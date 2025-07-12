@@ -22,7 +22,7 @@ body {
   color: #333;
 }
 
-/* 🔵 Barra superior de aviso */
+/*Barra superior de aviso */
 .barra-superior {
  background-color: #005ec3;
   color: white;
@@ -331,5 +331,38 @@ body {
 
   .footer-contacto {
     margin-top: 2rem;
+  }
+}
+
+/* ✅ Logo móvil */
+.logo-movil {
+  display: none;
+  align-items: center;
+}
+
+.imagen-logo-movil {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Mostrar solo en móvil */
+@media (max-width: 768px) {
+  .logo-movil {
+    display: flex;
+  }
+
+  .imagen-logo-movil {
+    height: 50px;
+  }
+
+  .navegacion-centro {
+    display: none;
+  }
+}
+
+/* Ocultar en escritorio */
+@media (min-width: 769px) {
+  .logo-movil {
+    display: none;
   }
 }
