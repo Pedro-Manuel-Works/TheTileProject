@@ -183,6 +183,9 @@ body {
     margin-left: auto;
   }
 
+  .indexMovil {
+    font-family: 'MiFuente', sans-serif;
+  }
   /* Centra el logo con posición absoluta */
   .logo {
     position: absolute;
