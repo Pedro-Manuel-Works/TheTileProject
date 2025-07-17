@@ -42,14 +42,14 @@ body {
 
 /* Barra de navegación principal */
 .barra-navegacion {
-  display: flex;
+ display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: white;
   border-bottom: 1px solid #ddd;
   position: fixed;
-  top: 32px;             /* 💡 depende del alto de .barra-superior */
+  top: 32px;            
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -70,7 +70,7 @@ body {
 
 .navegacion-centro{
   justify-content: center;
-  transform: translateX(-135px);
+  transform: translateX(-90px);
 }
 
 .navegacion-izquierda{
