@@ -1,11 +1,12 @@
-/* Reset básico */
+/* =================== */
+/* RESET Y TIPOGRAFÍA */
+/* =================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*TIPOGRAFIA*/
 @font-face {
   font-family: 'MiFuente';
   src: url('/fonts/transfonter.org-20250710-155859/InstrumentSerif-Italic.woff2') format('woff2'),
@@ -14,8 +15,6 @@
   font-style: normal;
 }
 
-
-/* Estilo general del cuerpo */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
@@ -58,7 +57,7 @@ body {
   z-index: 1000;
 }
 
-.galeria{
+.expos{
     font-family: 'MiFuente', sans-serif;
 }
 
@@ -193,160 +192,73 @@ body {
   }
 }
 
+/* =================== */
+/* EXPOS RECUADROS     */
+/* =================== */
+.contenedor-expos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  min-height: calc(100vh - 200px); /* altura visible bajo navbar */
+}
 
-
-/*CUADRICULA*/
-
-/* Galería de imágenes */
-.galeria-contenedor {
-  padding-top: 150px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.expo {
+  text-align: center;
+  max-width: 300px;
   width: 100%;
-
 }
 
-.grid-galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.cuadro-imagen {
-  background-color: #eee;
+.imagen-expo {
+  width: 100%;
   aspect-ratio: 1 / 1;
-  border: 1px solid #ccc;
-  /*border-radius: 8px;*/
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
+}
+
+.imagen-expo img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Responsive: 2 columnas en tablets */
-@media (max-width: 992px) {
-  .grid-galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Responsive: 1 columna en móviles */
-@media (max-width: 600px) {
-  .grid-galeria {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-/* Botón hamburguesa (solo móvil) */
-.menu-movil {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
+.texto-expo {
+  margin-top: 0.5rem;
   color: blue;
+  font-family: 'MiFuente', serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.expo-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.expo-link:hover {
+  opacity: 0.9;
   cursor: pointer;
 }
 
-/* Menú desplegable móvil */
-.menu-desplegable {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
-  position: fixed; /* CAMBIADO */
-  top: 100px; /* AJUSTA según la altura de .barra-superior (32px) + .barra-navegacion (32px aprox) */
-  width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1002; /* MÁS ALTO que barra-navegacion (1000) y barra-superior (1001) */
-}
-
-.menu-desplegable a {
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-/* Mostrar menú cuando activo */
-.menu-desplegable.activo {
-  display: flex;
-}
-
-/*Sección del video principal */
-.video-principal {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 0;
-}
-
-.video-principal video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-/* -------------------------- */
-/* Responsive para móvil */
-/* -------------------------- */
-@media (max-width: 768px) {
-  /* Oculta las secciones de navegación */
-  .navegacion-izquierda,
-  .navegacion-centro,
-  .navegacion-derecha {
-    display: none;
-  }
-
-  /* Muestra botón hamburguesa */
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
-  }
-
-  /* Centra el logo con posición absoluta */
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .media{
-    font-family: 'MiFuente', sans-serif;
-  }
-
-  .barra-navegacion {
-    justify-content: space-between;
-  }
-
-  /* Ajusta video para móvil */
-  .video-principal video {
-    max-height: 300px;
-  }
-
-  /* Asegura visibilidad del header */
-  header {
-    background-color: white;
-    position: relative;
-    z-index: 10;
-  }
-}
-
-/*FOOTER*/
-
-/* Footer */
+/* =================== */
+/* FOOTER              */
+/* =================== */
 .footer {
   background-color: white;
   padding: 2rem;
   border-top: 1px solid #ddd;
   color: blue;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 .footer-contenido {
@@ -355,24 +267,30 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-columna {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
   min-width: 120px;
+  align-items: flex-start;
+  flex: 1;
 }
 
 .footer-columna h4 {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .footer-columna a {
   text-decoration: none;
   color: blue;
   font-weight: normal;
+  font-size: 0.95rem;
 }
 
 .footer-contacto {
@@ -380,74 +298,92 @@ body {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  max-width: 250px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .boton-escribenos {
   display: inline-block;
   border: 2px solid blue;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
   color: blue;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-escribenos:hover {
+  background-color: blue;
+  color: white;
 }
 
 .footer-contacto p {
   font-size: 0.9rem;
   color: blue;
+  margin-top: 0.3rem;
+  max-width: 250px;
 }
 
-/* Responsive */
+/* =================== */
+/* RESPONSIVE MÓVIL    */
+/* =================== */
 @media (max-width: 768px) {
-  .footer-contenido {
+  .contenedor-expos {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    height: auto;
+    margin-top: 140px;
   }
 
-  .footer-columna,
+  .expo {
+    max-width: 90%;
+  }
+
+  .texto-expo {
+    font-size: 1.1rem;
+  }
+
+  .footer-contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    align-items: flex-start;
+  }
+
+  .footer-columna {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .footer-contacto {
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-contacto {
-    margin-top: 2rem;
-  }
-}
-
-/*Logo móvil */
-.logo-movil {
-  display: none;
-  align-items: center;
-}
-
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
-}
-
-/* Mostrar solo en móvil */
-@media (max-width: 768px) {
-  .logo-movil {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
-  .imagen-logo-movil {
-    height: 50px;
+  .footer-contacto .boton-escribenos {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+    margin: 0;
   }
 
-  .navegacion-centro {
-    display: none;
-  }
-}
-
-/* Ocultar en escritorio */
-@media (min-width: 769px) {
-  .logo-movil {
-    display: none;
+  .footer-contacto p {
+    font-size: 0.85rem;
+    flex: 1;
+    color: blue;
+    margin: 0;
+    text-align: left;
+    max-width: 100%;
   }
 }
