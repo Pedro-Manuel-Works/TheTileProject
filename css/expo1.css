@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: 'MiFuente';
-  src: url('./fonts/InstrumentSerif-Italic.woff2') format('woff2'),
-       url('./fonts/InstrumentSerif-Italic.woff') format('woff');
+  src: url('TheTileProject-Portafolio-Web/fonts/InstrumentSerif-Italic.woff2') format('woff2'),
+       url('TheTileProject-Portafolio-Web/fonts/InstrumentSerif-Italic.woff') format('woff');
 }
 
 
