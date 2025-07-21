@@ -95,6 +95,10 @@ body {
   font-family: 'MiFuente', sans-serif;
 }
 
+.boton-contacto-movil {
+  font-family: 'MiFuente', sans-serif;
+}
+
 .logo {
   display: flex;
   justify-content: center;
