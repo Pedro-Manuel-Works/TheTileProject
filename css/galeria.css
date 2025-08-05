@@ -195,12 +195,12 @@ body {
 
 /* Galería de imágenes */
 .galeria-contenedor {
-  padding-top: 150px;
+  padding-top: 95px; /* Antes estaba en 150px */
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-
 }
+
 
 .grid-galeria {
   display: grid;
