@@ -189,28 +189,29 @@ body {
 /* =================== */
 
 .contenido-expo {
-  padding: 160px 20px 60px; /* espacio por el navbar */
+  padding: 0px; /* espacio por el navbar */
   background-color: #fff;
+  margin-top: 95px;
 }
 
 .contenedor-expo {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start; /* <-- Pega los cuadros a la izquierda */
+  align-items: center; /* <-- Centra verticalmente el texto */
   gap: 40px;
-  max-width: 1200px;
+  width: 100%; /* <-- Usa todo el ancho */
   margin: 0 auto;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* <-- Evita que se bajen de línea */
+  padding: 0 20px;
+  max-width: none;
 }
 
 /* Cuadrícula de imágenes */
 .cuadricula-imagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  flex: 1;
-  min-width: 300px;
-  
+  gap: 10px;
+  width: 60%; /* <-- Ocupa el 60% a la izquierda */
 }
 
 .imagen-cuadro img {
@@ -222,14 +223,20 @@ body {
 
 /* Texto de la exposición */
 .info-expo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* <-- Esto lo sube hacia arriba */
+  align-self: flex-start;       /* <-- Esto alinea el bloque al top de los cuadros */
   flex: 1;
   min-width: 300px;
   text-align: center;
+  margin-top: 150px;
 }
+
 
 .info-expo h2 {
   font-size: 1.5rem;
-  color: #005ec3;
+  color: blue;
   margin-bottom: 1rem;
   font-family: 'MiFuente', serif;
 }

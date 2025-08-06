@@ -153,7 +153,7 @@ body {
 /* BOTONES CENTRADOS  */
 /* =================== */
 .contenedor-contacto {
-  margin-top: 180px; /* espacio por barra superior + nav */
+  margin-top: 250px; /* espacio por barra superior + nav */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +164,8 @@ body {
 
 .boton-red {
   display: inline-block;
-  width: 200px; /* ✅ MISMO tamaño para todos */
+  position: relative; /* Necesario para el ::after */
+  width: 200px;
   padding: 0.5rem 1rem;
   border: 1px solid blue;
   color: blue;
@@ -173,8 +174,21 @@ body {
   font-size: 1rem;
   background-color: transparent;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: visible; /* Permitir que el cuadradito salga fuera */
+}
+
+.boton-red::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  bottom: -5px; /* Sale hacia abajo */
+  right: -5px;  /* Sale hacia la derecha */
+  transform: scale(0); /* Oculto inicialmente */
+  transition: transform 0.3s ease;
 }
 
 .boton-red:hover {
@@ -183,6 +197,11 @@ body {
   font-weight: normal;
   cursor: pointer;
 }
+
+.boton-red:hover::after {
+  transform: scale(1); /* Aparece el cuadradito */
+}
+
 
 .boton-red.especial {
   font-style: italic;
