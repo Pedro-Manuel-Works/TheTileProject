@@ -13,3 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("Botón o menú no encontrados");
   }
 });
+
+
+
+
+
+
