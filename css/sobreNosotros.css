@@ -187,7 +187,7 @@ body {
 
 /* CONTENIDO SOBRE NOSOTROS */
 .contenido-sobre-nosotros {
-  margin-top: 110px; /* espacio tras el nav fijo */
+  margin-top: 150px; /* espacio tras el nav fijo */
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -196,7 +196,7 @@ body {
   max-width: 900px;
   margin: 0 auto 3rem auto;
   color: #001aa2;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   line-height: 1.6;
 }
 
@@ -208,20 +208,25 @@ body {
   margin-bottom: 4rem;
 }
 
-.foto-placeholder {
-  width: 100%;
-  height: 180px;
-  background-color: #001aa2;
-  margin-bottom: 0.8rem;
-}
-
 .miembro {
   font-family: 'MiFuente', serif;
   font-style: italic;
   color: #001aa2;
   font-size: 1rem;
   margin-bottom: 0.2rem;
-  
+  text-align: center;
+  max-width: 200px; /* controla el ancho de la tarjeta */
+}
+
+/* Imagen dentro de cada miembro */
+.foto-miembro {
+  width: 160px;   /* siempre igual */
+  height: 180px;  /* siempre igual */
+  object-fit: cover;   /* recorta si sobra */
+  margin-bottom: 0.8rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .miembro p {

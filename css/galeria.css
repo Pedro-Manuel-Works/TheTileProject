@@ -196,8 +196,8 @@ body {
 /* Galería de imágenes */
 .galeria-contenedor {
   padding-top: 95px; /* Antes estaba en 150px */
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   width: 100%;
 }
 
@@ -205,8 +205,8 @@ body {
 .grid-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  max-width: 1600px;
+  gap: 0.5rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -214,7 +214,6 @@ body {
   background-color: #eee;
   aspect-ratio: 1 / 1;
   border: 1px solid #ccc;
-  /*border-radius: 8px;*/
   overflow: hidden;
   background-size: cover;
   background-position: center;
