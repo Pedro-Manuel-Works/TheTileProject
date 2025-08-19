@@ -15,6 +15,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/*RECUADRO DE MEDIDAS*/
+
+const cuadros = document.querySelectorAll(".cuadro-imagen");
+const cursorRecuadro = document.getElementById("cursorRecuadro");
+
+cuadros.forEach(cuadro => {
+  cuadro.addEventListener("mouseenter", () => {
+    cursorRecuadro.style.display = "block";
+  });
+
+  cuadro.addEventListener("mouseleave", () => {
+    cursorRecuadro.style.display = "none";
+  });
+
+  cuadro.addEventListener("mousemove", e => {
+    cursorRecuadro.style.left = (e.pageX + 10) + "px"; // pequeño offset
+    cursorRecuadro.style.top = (e.pageY + 10) + "px";
+  });
+});
+
 
 
 
