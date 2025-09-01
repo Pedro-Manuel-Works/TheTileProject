@@ -245,7 +245,7 @@ body {
 }
 
 .azulejo-unico img {
-  width: 80%;
+  width: 100%;
   max-width: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -254,20 +254,20 @@ body {
 
 .texto-azulejo {
   font-family: 'MiFuente', serif;
-  font-size: 1.5rem;
-  color: #003399;
+  font-size: 1rem;
+  color: blue;
 }
 
 .precio-azulejo {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #003399;
+  color: blue;
 }
 
 .boton-pedido-azulejo {
   background-color: white;
   color: blue;
-  border: 2px solid #0000ff;
+  border: 2px solid blue;
   padding: 0.6rem 1.2rem;
   font-weight: bold;
   cursor: pointer;
@@ -328,7 +328,7 @@ body {
 .cursor-recuadro {
   position: fixed;
   pointer-events: none; /* No bloquea clics */
-  width: 150px;  /* Ajusta el tamaño según tu imagen */
+  width: 250px;  /* Ajusta el tamaño según tu imagen */
   height: auto;
   display: none; /* Oculta por defecto */
   z-index: 2000;

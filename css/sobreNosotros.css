@@ -212,7 +212,7 @@ body {
 .miembro {
   font-family: 'MiFuente', serif;
   color: #001aa2;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin-bottom: 0.2rem;
   text-align: center;
   max-width: 200px; /* controla el ancho de la tarjeta */
