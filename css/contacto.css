@@ -202,11 +202,6 @@ body {
   transform: scale(1); /* Aparece el cuadradito */
 }
 
-
-.boton-red.especial {
-  font-style: italic;
-}
-
 /* =================== */
 /* RESPONSIVE         */
 /* =================== */

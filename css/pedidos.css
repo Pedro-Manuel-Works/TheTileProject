@@ -249,7 +249,7 @@ body {
   max-width: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 1px solid #ccc;
+  cursor: none;
 }
 
 .texto-azulejo {
@@ -322,16 +322,18 @@ body {
 /* ============================= */
 .cuadro-imagen {
   position: relative;
-  cursor: none; /* Oculta el cursor dentro del cuadro */
+  cursor: default; /* Oculta el cursor dentro del cuadro */
 }
 
 .cursor-recuadro {
   position: fixed;
-  pointer-events: none; /* No bloquea clics */
-  width: 250px;  /* Ajusta el tamaño según tu imagen */
+  pointer-events: none;
+  width: 250px;
   height: auto;
-  display: none; /* Oculta por defecto */
+  display: none;
   z-index: 2000;
 }
+
+
 
 

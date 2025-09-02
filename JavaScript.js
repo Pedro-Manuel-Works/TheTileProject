@@ -1,39 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("JS cargado correctamente");
-
-  const botonMenu = document.querySelector('.menu-movil');
-  const menuDesplegable = document.getElementById('menuMovil');
-
-  if (botonMenu && menuDesplegable) {
-    botonMenu.addEventListener('click', () => {
-      menuDesplegable.classList.toggle('activo');
-      console.log("Menú desplegable toggled");
-    });
-  } else {
-    console.error("Botón o menú no encontrados");
-  }
-});
 
 
-/*RECUADRO DE MEDIDAS*/
 
-const cuadros = document.querySelectorAll(".cuadro-imagen");
+/* RECUADRO DE MEDIDAS SOLO EN EL GIF/VIDEO */
+const azulejoUnico = document.querySelector(".azulejo-unico");
 const cursorRecuadro = document.getElementById("cursorRecuadro");
 
-cuadros.forEach(cuadro => {
-  cuadro.addEventListener("mouseenter", () => {
+if (azulejoUnico && cursorRecuadro) {
+  azulejoUnico.addEventListener("mouseenter", () => {
     cursorRecuadro.style.display = "block";
   });
 
-  cuadro.addEventListener("mouseleave", () => {
+  azulejoUnico.addEventListener("mouseleave", () => {
     cursorRecuadro.style.display = "none";
   });
 
-  cuadro.addEventListener("mousemove", e => {
-    cursorRecuadro.style.left = (e.pageX + 10) + "px"; // pequeño offset
-    cursorRecuadro.style.top = (e.pageY + 10) + "px";
+  azulejoUnico.addEventListener("mousemove", e => {
+    cursorRecuadro.style.left = (e.pageX - 110) + "px";
+    cursorRecuadro.style.top  = (e.pageY - 130) + "px";
   });
-});
+}
+
 
 
 
