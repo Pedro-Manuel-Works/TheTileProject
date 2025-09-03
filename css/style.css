@@ -95,42 +95,6 @@ body {
   margin-left: -30px;  
 }
 
-/* Botón hamburguesa (solo móvil) */
-.menu-movil {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
-}
-
-/* Menú desplegable móvil */
-.menu-desplegable {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 5;
-}
-
-.menu-desplegable a {
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-/* Mostrar menú cuando activo */
-.menu-desplegable.activo {
-  display: flex;
-}
 
 /* Sección del video principal */
 .video-principal {
@@ -147,84 +111,7 @@ body {
   display: block;
 }
 
-/* Responsive para móvil */
-@media (max-width: 768px) {
-  /* Oculta las secciones de navegación */
-  .navegacion-izquierda,
-  .navegacion-centro,
-  .navegacion-derecha {
-    display: none;
-  }
 
-  /* Muestra botón hamburguesa */
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
-  }
-
-  .indexMovil {
-    font-family: 'MiFuente', sans-serif;
-  }
-  /* Centra el logo con posición absoluta */
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .barra-navegacion {
-    justify-content: space-between;
-  }
-
-  /* Ajusta video para móvil */
-  .video-principal video {
-    max-height: 300px;
-  }
-
-  /* Asegura visibilidad del header */
-  header {
-    background-color: white;
-    position: relative;
-    z-index: 10;
-  }
-
-}
-
-/* Logo solo visible en móvil (oculto en escritorio) */
-.logo-movil {
-  display: flex;
-  align-items: center;
-}
-
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
-}
-
-/* En escritorio, ocultar el logo-móvil */
-@media (min-width: 769px) {
-  .logo-movil {
-    display: none;
-  }
-}
-
-/* En móvil, ocultar el logo centrado */
-@media (max-width: 768px) {
-  .navegacion-centro {
-    display: none;
-  }
-
-  .imagen-logo-movil {
-    height: 50px;
-  }
-
-  .navegacion-izquierda {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-  }
-}
 
 
 

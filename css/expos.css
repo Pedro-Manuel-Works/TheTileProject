@@ -30,8 +30,8 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
-  height: 35px; /* <-- Reducción de la altura */
-  line-height: 35px; /* <-- Para centrar el texto verticalmente */
+  height: 35px;
+  line-height: 35px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -46,17 +46,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* <-- Reducción de altura de la barra */
+  height: 60px;
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
   position: fixed;
-  top: 35px; /* <-- Justo debajo de la barra superior */
+  top: 35px;
   left: 0;
   z-index: 1000;
 }
 
-.expos{
+.expos {
   font-family: 'MiFuente';
 }
 
@@ -69,38 +69,38 @@ body {
 .navegacion-izquierda a,
 .navegacion-derecha a {
   margin: 0 1.5rem;
-  font-size: 0.95rem; /* Ajustar tamaño si es necesario */
+  font-size: 0.95rem;
 }
 
 .navegacion-centro {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-20px); /* <-- Ajusta el desplazamiento a la izquierda */
+  transform: translateX(-20px);
 }
 
 .barra-navegacion a {
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 0.85rem; /* <-- Reduce el tamaño del texto aquí */
+  font-size: 0.85rem;
 }
 
 .barra-navegacion::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Grosor de la línea */
-  background-color: blue; /* Color negro MUY suave */
+  height: 1px;
+  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .imagen-logo {
-  height: 70px;  /* Aumenta el tamaño del logo */
+  height: 70px;
   object-fit: contain;
-  margin-left: -30px;  /* Mantén el desplazamiento si era necesario */
+  margin-left: -30px;
 }
 
 .menu-movil {
@@ -112,7 +112,9 @@ body {
   cursor: pointer;
 }
 
-/* Menú móvil desplegable */
+/* =================== */
+/* MENÚ MÓVIL         */
+/* =================== */
 .menu-desplegable {
   display: none;
   flex-direction: column;
@@ -126,8 +128,8 @@ body {
   z-index: 1002;
 }
 
-.exposMovil{
-    font-family: 'MiFuente', sans-serif;
+.exposMovil {
+  font-family: 'MiFuente', sans-serif;
 }
 
 .menu-desplegable a {
@@ -155,9 +157,13 @@ body {
   object-fit: contain;
 }
 
+/* =================== */
+/* RESPONSIVE MÓVIL    */
+/* =================== */
 @media (max-width: 768px) {
   .logo-movil {
     display: flex;
+    padding-left: 1rem; /* separa el logo del borde izquierdo */
   }
 
   .imagen-logo-movil {
@@ -174,16 +180,21 @@ body {
     display: block;
     font-size: 1.8rem;
     margin-left: auto;
-  }
-
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-right: 1rem; /* separa la hamburguesa del borde derecho */
   }
 
   .barra-navegacion {
     justify-content: space-between;
+  }
+
+  .menu-desplegable {
+    top: 95px; /* justo debajo de la navbar */
+    padding: 1.5rem 1rem;
+  }
+
+  .menu-desplegable a {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
   }
 }
 
@@ -199,7 +210,7 @@ body {
   padding: 1rem;
   max-width: 1200px;
   margin: 140px auto 0;
-  min-height: calc(100vh - 200px); /* altura visible bajo navbar */
+  min-height: calc(100vh - 200px);
 }
 
 .expo {
@@ -243,5 +254,3 @@ body {
   opacity: 0.9;
   cursor: pointer;
 }
-
-
