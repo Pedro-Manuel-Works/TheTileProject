@@ -1,3 +1,4 @@
+/* Reset y tipografía */
 * {
   margin: 0;
   padding: 0;
@@ -16,19 +17,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #333;
+  overflow-x: hidden;
 }
 
-/* =================== */
-/* BARRA SUPERIOR     */
-/* =================== */
+/* BARRA SUPERIOR */
 .barra-superior {
   background-color: blue;
   color: white;
   text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
-  height: 35px; /* <-- Reducción de la altura */
-  line-height: 35px; /* <-- Para centrar el texto verticalmente */
+  height: 35px;
+  line-height: 35px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -36,24 +36,22 @@ body {
   z-index: 1001;
 }
 
-/* =================== */
-/* NAVBAR             */
-/* =================== */
+/* NAVBAR (NO CAMBIAR EN ESCRITORIO) */
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* <-- Reducción de altura de la barra */
+  height: 60px;
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
   position: fixed;
-  top: 35px; /* <-- Justo debajo de la barra superior */
+  top: 35px;
   left: 0;
   z-index: 1000;
 }
 
-.sobreNosotros-{
+.sobreNosotros- {
   font-family: 'MiFuente';
 }
 
@@ -66,129 +64,88 @@ body {
 .navegacion-izquierda a,
 .navegacion-derecha a {
   margin: 0 1.5rem;
-  font-size: 0.95rem; /* Ajustar tamaño si es necesario */
+  font-size: 0.95rem;
 }
 
 .navegacion-centro {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-10px); /* <-- Ajusta el desplazamiento a la izquierda */
+  transform: translateX(-10px);
 }
 
 .barra-navegacion a {
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 0.85rem; /* <-- Reduce el tamaño del texto aquí */
+  font-size: 0.85rem;
 }
 
 .barra-navegacion::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Grosor de la línea */
-  background-color: blue; /* Color negro MUY suave */
+  height: 1px;
+  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .imagen-logo {
-  height: 70px;  /* Aumenta el tamaño del logo */
+  height: 70px;
   object-fit: contain;
-  margin-left: -30px;  /* Mantén el desplazamiento si era necesario */
+  margin-left: -30px;
 }
 
-.menu-movil {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
-}
-
-/* Menú móvil desplegable */
-.menu-desplegable {
-  display: none;
+/* --- HAMBURGUESA (MISMO DISEÑO) --- */
+.hamburguesa {
+  display: none; /* aparece sólo en móvil */
   flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 100px;
-  width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-right: 1rem;
   z-index: 1002;
 }
 
-.exposMovil{
-    font-family: 'MiFuente', sans-serif;
+.hamburguesa span {
+  height: 3px;
+  width: 25px;
+  background: blue;
+  margin: 4px 0;
+  border-radius: 2px;
 }
 
-.menu-desplegable a {
-  padding: 0.5rem 0;
+/* Menú móvil (oculto por defecto) */
+.menu-movil {
+  display: none;
+  flex-direction: column;
+  background: white;
+  position: fixed;
+  top: 95px; /* 35px barra-superior + 60px nav */
+  right: 0;
+  width: 100%;
+  border-top: 1px solid blue;
+  z-index: 999;
+}
+
+.menu-movil a {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 1rem;
+  text-align: center;
+  font-family: 'MiFuente', serif; /* <--- Asegura que todos tengan la misma fuente */
 }
 
-.menu-desplegable.activo {
+
+.menu-movil.activo {
   display: flex;
 }
 
-/* =================== */
-/* LOGO EN MÓVIL       */
-/* =================== */
-.logo-movil {
-  display: none;
-  align-items: center;
-}
-
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
-}
-
-@media (max-width: 768px) {
-  .logo-movil {
-    display: flex;
-  }
-
-  .imagen-logo-movil {
-    height: 50px;
-  }
-
-  .navegacion-izquierda,
-  .navegacion-centro,
-  .navegacion-derecha {
-    display: none;
-  }
-
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
-  }
-
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .barra-navegacion {
-    justify-content: space-between;
-  }
-}
-
-
-/* CONTENIDO SOBRE NOSOTROS */
-
+/* CONTENIDO SOBRE NOSOTROS (no tocar escritorio) */
 .contenido-sobre-nosotros {
-  margin-top: 150px; /* espacio tras el nav fijo */
+  margin-top: 150px;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -215,21 +172,20 @@ body {
   font-size: 0.85rem;
   margin-bottom: 0.2rem;
   text-align: center;
-  max-width: 200px; /* controla el ancho de la tarjeta */
+  max-width: 200px;
 }
 
-/* Imagen dentro de cada miembro */
 .foto-miembro {
-  width: 160px;   /* siempre igual */
-  height: 180px;  /* siempre igual */
-  object-fit: cover;   /* recorta si sobra */
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
   margin-bottom: 0.8rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.nombre-miembro{
+.nombre-miembro {
   font-family: 'MiFuente';
 }
 
@@ -240,9 +196,37 @@ body {
   margin-top: 0.5rem; 
 }
 
-
-/* RESPONSIVE */
+/* ------- RESPONSIVE: sólo afecta a móvil (no cambia escritorio) ------- */
 @media (max-width: 768px) {
+  /* Ocultar enlaces laterales de escritorio */
+  .navegacion-izquierda,
+  .navegacion-derecha {
+    display: none;
+  }
+
+  /* Alinear el bloque central (logo) a la izquierda en móvil */
+  .navegacion-centro {
+    transform: none;
+    margin-left: 1rem;
+    justify-content: flex-start;
+  }
+
+  .imagen-logo {
+    margin-left: 0;
+    height: 60px;
+  }
+
+  /* Mostrar hamburguesa */
+  .hamburguesa {
+    display: flex;
+  }
+
+  /* Activar menú móvil (por JS añade .activo) */
+  .menu-movil {
+    display: none;
+  }
+
+  /* Ajustes de contenido en móvil */
   .equipo {
     flex-direction: column;
     align-items: center;
@@ -256,5 +240,6 @@ body {
   .texto-descriptivo {
     font-size: 0.9rem;
     padding: 0 1rem;
+    text-align: center;
   }
 }

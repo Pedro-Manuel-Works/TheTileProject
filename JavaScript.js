@@ -1,4 +1,3 @@
-
 /* RECUADRO DE MEDIDAS SOLO EN EL GIF/VIDEO */
 const azulejoUnico = document.querySelector(".azulejo-unico");
 const cursorRecuadro = document.getElementById("cursorRecuadro");
@@ -18,24 +17,12 @@ if (azulejoUnico && cursorRecuadro) {
   });
 }
 
+/* --- MENU HAMBURGUESA --- */
+const hamburguesa = document.querySelector(".hamburguesa");
+const menuMovil = document.querySelector(".menu-movil");
 
-// Menú hamburguesa
-const menuBtn = document.querySelector(".menu-movil");
-const menuDesplegable = document.querySelector(".menu-desplegable");
-
-if (menuBtn && menuDesplegable) {
-  menuBtn.addEventListener("click", () => {
-    menuDesplegable.classList.toggle("activo");
-  });
-
-  // Opcional: cerrar al hacer clic en un enlace
-  menuDesplegable.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      menuDesplegable.classList.remove("activo");
-    });
+if (hamburguesa && menuMovil) {
+  hamburguesa.addEventListener("click", () => {
+    menuMovil.style.display = menuMovil.style.display === "flex" ? "none" : "flex";
   });
 }
-
-
-
-

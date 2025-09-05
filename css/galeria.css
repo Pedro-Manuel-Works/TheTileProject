@@ -1,11 +1,12 @@
-/* Reset básico */
+/* =================== */
+/* RESET Y TIPOGRAFÍA */
+/* =================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*TIPOGRAFIA*/
 @font-face {
   font-family: 'MiFuente';
   src: url('/fonts/transfonter.org-20250710-155859/InstrumentSerif-Italic.woff2') format('woff2'),
@@ -14,12 +15,11 @@
   font-style: normal;
 }
 
-
-/* Estilo general del cuerpo */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #333;
+  overflow-x: hidden;
 }
 
 /* =================== */
@@ -31,8 +31,8 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
-  height: 35px; /* <-- Reducción de la altura */
-  line-height: 35px; /* <-- Para centrar el texto verticalmente */
+  height: 35px;
+  line-height: 35px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -47,17 +47,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* <-- Reducción de altura de la barra */
+  height: 60px;
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
   position: fixed;
-  top: 35px; /* <-- Justo debajo de la barra superior */
+  top: 35px;
   left: 0;
   z-index: 1000;
 }
 
-.galeria{
+.galeria {
   font-family: 'MiFuente';
 }
 
@@ -70,137 +70,88 @@ body {
 .navegacion-izquierda a,
 .navegacion-derecha a {
   margin: 0 1.5rem;
-  font-size: 0.95rem; /* Ajustar tamaño si es necesario */
+  font-size: 0.95rem;
 }
 
 .navegacion-centro {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-20px); /* <-- Ajusta el desplazamiento a la izquierda */
+  transform: translateX(-20px);
 }
 
 .barra-navegacion a {
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 0.85rem; /* <-- Reduce el tamaño del texto aquí */
+  font-size: 0.85rem;
 }
 
 .barra-navegacion::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Grosor de la línea */
-  background-color: blue; /* Color negro MUY suave */
+  height: 1px;
+  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .imagen-logo {
-  height: 70px;  /* Aumenta el tamaño del logo */
+  height: 70px;
   object-fit: contain;
-  margin-left: -30px;  /* Mantén el desplazamiento si era necesario */
+  margin-left: -30px;
 }
 
-
-.logo-movil {
-  display: none;
-}
-
-.menu-movil {
-  display: none;
-}
-
-
-/* Menú móvil desplegable */
-.menu-desplegable {
+/* =================== */
+/* MENÚ HAMBURGUESA   */
+/* (idéntico patrón)  */
+/* =================== */
+.hamburguesa {
   display: none;
   flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 100px;
-  width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1002;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
-.exposMovil{
-    font-family: 'MiFuente', sans-serif;
+.hamburguesa span {
+  height: 3px;
+  width: 25px;
+  background: blue;
+  margin: 4px 0;
+  border-radius: 2px;
 }
 
-.menu-desplegable a {
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: #0000ff;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.menu-desplegable.activo {
-  display: flex;
-}
-
-/* =================== */
-/* LOGO EN MÓVIL       */
-/* =================== */
-.logo-movil {
+/* Menú móvil (oculto por defecto) */
+.menu-movil {
   display: none;
-  align-items: center;
+  flex-direction: column;
+  background: white;
+  position: fixed;
+  top: 95px; /* 35 barra + 60 nav */
+  right: 0;
+  width: 100%;
+  border-top: 1px solid blue;
+  z-index: 999;
 }
 
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
+.menu-movil a {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .logo-movil {
-    display: flex;
-  }
-
-  .imagen-logo-movil {
-    height: 50px;
-  }
-
-  .navegacion-izquierda,
-  .navegacion-centro,
-  .navegacion-derecha {
-    display: none;
-  }
-
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
-  }
-
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .barra-navegacion {
-    justify-content: space-between;
-  }
-}
-
-
-
-/*CUADRICULA*/
-
-/* Galería de imágenes */
+/* =================== */
+/* GALERÍA             */
+/* =================== */
 .galeria-contenedor {
-  padding-top: 95px; /* Antes estaba en 150px */
-  padding-left: 0rem;
-  padding-right: 0rem;
+  padding-top: 95px; /* espacio por barra superior + nav */
   width: 100%;
 }
-
 
 .grid-galeria {
   display: grid;
@@ -220,149 +171,37 @@ body {
   width: 100%;
 }
 
-/* Responsive: 2 columnas en tablets */
-@media (max-width: 992px) {
+/* -------------------------- */
+/* RESPONSIVE (móvil)         */
+/* -------------------------- */
+@media (max-width: 768px) {
+  .navegacion-izquierda,
+  .navegacion-derecha {
+    display: none;
+  }
+
+  .navegacion-centro {
+    transform: none;
+    margin-left: 1rem;
+    justify-content: flex-start; /* logo a la izquierda */
+  }
+
+  .imagen-logo {
+    margin-left: 0;
+    height: 60px;
+  }
+
+  .hamburguesa {
+    display: flex; /* mostrar hamburguesa en móvil */
+  }
+
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsive: 1 columna en móviles */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .grid-galeria {
     grid-template-columns: 1fr;
-  }
-}
-
-
-
-/* Botón hamburguesa (solo móvil) */
-.menu-movil {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
-}
-
-/* Menú desplegable móvil */
-.menu-desplegable {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
-  position: fixed; /* CAMBIADO */
-  top: 100px; /* AJUSTA según la altura de .barra-superior (32px) + .barra-navegacion (32px aprox) */
-  width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1002; /* MÁS ALTO que barra-navegacion (1000) y barra-superior (1001) */
-}
-
-.menu-desplegable a {
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-/* Mostrar menú cuando activo */
-.menu-desplegable.activo {
-  display: flex;
-}
-
-/*Sección del video principal */
-.video-principal {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 0;
-}
-
-.video-principal video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-/* -------------------------- */
-/* Responsive para móvil */
-/* -------------------------- */
-@media (max-width: 768px) {
-  /* Oculta las secciones de navegación */
-  .navegacion-izquierda,
-  .navegacion-centro,
-  .navegacion-derecha {
-    display: none;
-  }
-
-  /* Muestra botón hamburguesa */
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
-  }
-
-  /* Centra el logo con posición absoluta */
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .media{
-    font-family: 'MiFuente', sans-serif;
-  }
-
-  .barra-navegacion {
-    justify-content: space-between;
-  }
-
-  /* Ajusta video para móvil */
-  .video-principal video {
-    max-height: 300px;
-  }
-
-  /* Asegura visibilidad del header */
-  header {
-    background-color: white;
-    position: relative;
-    z-index: 10;
-  }
-}
-
-
-/*Logo móvil */
-.logo-movil {
-  display: none;
-  align-items: center;
-}
-
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
-}
-
-/* Mostrar solo en móvil */
-@media (max-width: 768px) {
-  .logo-movil {
-    display: flex;
-  }
-
-  .imagen-logo-movil {
-    height: 50px;
-  }
-
-  .navegacion-centro {
-    display: none;
-  }
-}
-
-/* Ocultar en escritorio */
-@media (min-width: 769px) {
-  .logo-movil {
-    display: none;
   }
 }

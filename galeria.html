@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,34 +13,36 @@
 
     <header>
         <nav class="barra-navegacion">
-            <!-- LOGO visible solo en móvil -->
-            <a href="index.html" class="logo-movil">
-                <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-            </a>
-
+            <!-- Navegación izquierda (solo escritorio) -->
             <div class="navegacion-izquierda">
                 <a href="galeria.html" class="galeria">Galería</a>
                 <a href="exposGeneral.html">Expos</a>
                 <a href="sobreNosotros.html">Sobre Nosotros</a>
             </div>
 
+            <!-- Logo centrado en el bloque central (sin cambios en escritorio) -->
             <div class="navegacion-centro">
                 <a href="index.html" class="logo">
                     <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
                 </a>
             </div>
 
+            <!-- Navegación derecha (solo escritorio) -->
             <div class="navegacion-derecha">
                 <a href="contacto.html" class="boton-contacto">Contacto</a>
                 <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
             </div>
 
-            <!-- Botón de menú hamburguesa para móvil -->
-            <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <!-- Botón hamburguesa (solo móvil) -->
+            <div class="hamburguesa" aria-label="Abrir menú" aria-expanded="false" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
-        <!-- Menú desplegable para móvil -->
-        <div class="menu-desplegable" id="menuMovil">
+        <!-- Menú móvil desplegable -->
+        <div class="menu-movil" id="menuMovil">
             <a href="galeria.html" class="galeria">Galería</a>
             <a href="exposGeneral.html">Expos</a>
             <a href="sobreNosotros.html">Sobre Nosotros</a>
@@ -49,14 +51,14 @@
         </div>
     </header>
 
-    <!--Cuadrícula-->
+    <!-- Cuadrícula -->
     <main class="galeria-contenedor">
         <div class="grid-galeria">
             <div class="cuadro-imagen" style="background-image: url('img/GIF_galeria-1.gif');"></div>
             <div class="cuadro-imagen" style="background-image: url('img/GIF_galeria-2.gif');"></div>
             <div class="cuadro-imagen" style="background-image: url('img/GIF_galeria-3.gif');"></div>
             <div class="cuadro-imagen" style="background-image: url('img/GIF_galeria-4.gif');"></div>
-            <div class="cuadro-imagen" style="background-image: url('img/Azulejo\ \(6\).jpeg');"></div>
+            <div class="cuadro-imagen" style="background-image: url('img/Azulejo (6).jpeg');"></div>
             <div class="cuadro-imagen" style="background-image: url('img/GIF_galeria-5.gif');"></div>
         </div>
     </main>

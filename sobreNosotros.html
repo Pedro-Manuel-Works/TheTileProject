@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nosotros</title>
   <link rel="stylesheet" href="css/sobreNosotros.css">
 </head>
-
 <body>
   <div class="barra-superior">
     *Envíos gratis en toda España*
@@ -15,11 +13,6 @@
 
   <header>
     <nav class="barra-navegacion">
-      <!-- LOGO visible solo en móvil -->
-      <a href="index.html" class="logo-movil">
-        <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-      </a>
-
       <div class="navegacion-izquierda">
         <a href="galeria.html">Galería</a>
         <a href="exposGeneral.html">Expos</a>
@@ -37,15 +30,19 @@
         <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
       </div>
 
-      <!-- Botón de menú hamburguesa para móvil -->
-      <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <!-- Hamburguesa (mismo diseño que en las demás secciones) -->
+      <div class="hamburguesa" role="button" tabindex="0" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
-    <!-- Menú desplegable para móvil -->
-    <div class="menu-desplegable" id="menuMovil">
+    <!-- Menú móvil desplegable -->
+    <div class="menu-movil" id="menuMovil">
       <a href="galeria.html">Galería</a>
       <a href="exposGeneral.html">Expos</a>
-      <a href="sobreNosotros.html" class="sobreNosotros-movil">Sobre Nosotros</a>
+      <a href="sobreNosotros.html">Sobre Nosotros</a>
       <a href="contacto.html">Contacto</a>
       <a href="pedidos.html">Pide tu Azulejo</a>
     </div>
@@ -54,56 +51,51 @@
   <main class="contenido-sobre-nosotros">
     <section class="texto-descriptivo">
       <strong>
-      <p>
-        Somos cuatro amigos que coincidimos en la facultad de Bellas Artes. Con el tiempo, cada uno
-exploró su propio camino en las artes, el diseño gráfico y los audiovisuales... hasta que
-decidimos reencontrarnos para dar forma a un proyecto que nos reflejara de verdad.
-Este es el resultado de cruzar nuestras habilidades y perspectivas: un equipo versátil, con estilos
-distintos pero una misma pasión. Venimos de Asturias, Logroño, Navarra y Santander, y esa
-mezcla de orígenes se traduce en la diversidad y riqueza de lo que creamos.
-Jóvenes, inquietos y con ganas de dejar huella, ponemos en cada trabajo una parte de nosotros y
-de aquello que nos mueve.
-      </p>
-    </strong>
+        <p>
+          Somos cuatro amigos que coincidimos en la facultad de Bellas Artes. Con el tiempo, cada uno
+          exploró su propio camino en las artes, el diseño gráfico y los audiovisuales... hasta que
+          decidimos reencontrarnos para dar forma a un proyecto que nos reflejara de verdad.
+          Este es el resultado de cruzar nuestras habilidades y perspectivas: un equipo versátil, con estilos
+          distintos pero una misma pasión. Venimos de Asturias, Logroño, Navarra y Santander, y esa
+          mezcla de orígenes se traduce en la diversidad y riqueza de lo que creamos.
+          Jóvenes, inquietos y con ganas de dejar huella, ponemos en cada trabajo una parte de nosotros y
+          de aquello que nos mueve.
+        </p>
+      </strong>
     </section>
 
     <section class="equipo">
-  <div class="miembro">
-    <img src="img/ABOUT US_Julia.png" alt="Foto de Julia de la Guerra" class="foto-miembro">
-    <p>Julia de la Guerra</p>
-    <p class="descrip"><b>Founder & Brand Architect<br> <br>Define la estética, el concepto y la dirección creativa,lleva la visión de la
-    marca a cada pieza audiovisual y proyecto.</b></p>
-  </div>
+      <div class="miembro">
+        <img src="img/ABOUT US_Julia.png" alt="Foto de Julia de la Guerra" class="foto-miembro">
+        <p>Julia de la Guerra</p>
+        <p class="descrip"><b>Founder & Brand Architect<br><br>Define la estética, el concepto y la dirección creativa,lleva la visión de la
+        marca a cada pieza audiovisual y proyecto.</b></p>
+      </div>
 
-  <div class="miembro">
-    <img src="img/ABOUT US_Nacho_02.png" alt="Foto de Nombre Apellido" class="foto-miembro">
-    <p>Nacho Hormaechea</p>
-    <p class="descrip"><b>Design & Motion Crafter<br> <br> Diseña gráficos y animaciones que dan movimiento y personalidad a
-    nuestra marca.</b></p>
-  </div>
+      <div class="miembro">
+        <img src="img/ABOUT US_Nacho_02.png" alt="Foto de Nacho" class="foto-miembro">
+        <p>Nacho Hormaechea</p>
+        <p class="descrip"><b>Design & Motion Crafter<br><br> Diseña gráficos y animaciones que dan movimiento y personalidad a
+        nuestra marca.</b></p>
+      </div>
 
-  <div class="miembro">
-    <img src="img/ABOUT US_Lucía.png" alt="Foto de Nombre Apellido" class="foto-miembro">
-    <p>Lucía Marín</p>
-    <p class="descrip"><b>3D World Builder<br> <br> Crea mundos 3D donde los elementos de The Tile Project cobran vida y
-    se conectan.</b></p>
-  </div>
+      <div class="miembro">
+        <img src="img/ABOUT US_Lucía.png" alt="Foto de Lucía" class="foto-miembro">
+        <p>Lucía Marín</p>
+        <p class="descrip"><b>3D World Builder<br><br> Crea mundos 3D donde los elementos de The Tile Project cobran vida y
+        se conectan.</b></p>
+      </div>
 
-  <div class="miembro">
-    <img src="img/ABOUT US_Naia.png" alt="Foto de Nombre Apellido" class="foto-miembro">
-    <p>Naia Llorens</p>
-    <p class="descrip"><b>Visual Production Guru<br> <br> Coordina y supervisa la producción audiovisual, asegurando que las
-    ideas y la estética de la marca se traduzcan en contenido de alta
-    calidad.</b></p>
-  </div>
-</section>
-
+      <div class="miembro">
+        <img src="img/ABOUT US_Naia.png" alt="Foto de Naia" class="foto-miembro">
+        <p>Naia Llorens</p>
+        <p class="descrip"><b>Visual Production Guru<br><br> Coordina y supervisa la producción audiovisual, asegurando que las
+        ideas y la estética de la marca se traduzcan en contenido de alta
+        calidad.</b></p>
+      </div>
+    </section>
   </main>
 
   <script src="JavaScript.js"></script>
-
-
 </body>
-
-
 </html>
