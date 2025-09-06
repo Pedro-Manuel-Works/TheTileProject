@@ -13,34 +13,36 @@
 
     <header>
         <nav class="barra-navegacion">
-            <!-- LOGO visible solo en móvil -->
-            <a href="index.html" class="logo-movil">
-                <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-            </a>
-
+            <!-- Navegación izquierda (solo escritorio) -->
             <div class="navegacion-izquierda">
                 <a href="galeria.html" class="galeria">Galería</a>
                 <a href="exposGeneral.html">Expos</a>
                 <a href="sobreNosotros.html">Sobre Nosotros</a>
             </div>
 
+            <!-- Logo -->
             <div class="navegacion-centro">
                 <a href="index.html" class="logo">
                     <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
                 </a>
             </div>
 
+            <!-- Navegación derecha (solo escritorio) -->
             <div class="navegacion-derecha">
                 <a href="contacto.html" class="boton-contacto">Contacto</a>
                 <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
             </div>
 
-            <!-- Botón de menú hamburguesa para móvil -->
-            <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <!-- Botón hamburguesa (solo móvil) -->
+            <div class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
-        <!-- Menú desplegable para móvil -->
-        <div class="menu-desplegable" id="menuMovil">
+        <!-- Menú móvil desplegable -->
+        <div class="menu-movil">
             <a href="galeria.html" class="galeria">Galería</a>
             <a href="exposGeneral.html">Expos</a>
             <a href="sobreNosotros.html">Sobre Nosotros</a>
@@ -66,6 +68,12 @@
                 <div class="azulejo-unico">
                     <img src="img/Secuencia 03_tile_corr.gif" alt="Azulejo Principal">
                 </div>
+
+                <!-- Recuadro fijo de medidas solo en móvil -->
+                <div class="medidas-movil">
+                    <img src="img/png detalle azulejo_.png" alt="Medidas del azulejo">
+                </div>
+
                 <p class="texto-azulejo">Azulejo personalizado</p>
                 <p class="precio-azulejo">30€</p>
                 <button class="boton-pedido-azulejo">Haz tu pedido</button>
@@ -73,7 +81,7 @@
         </div>
     </main>
 
-    <!-- Imagen que será el cursor -->
+    <!-- Imagen que será el cursor en escritorio -->
     <img src="img/png detalle azulejo_.png" class="cursor-recuadro" id="cursorRecuadro">
 
     <script src="JavaScript.js"></script>

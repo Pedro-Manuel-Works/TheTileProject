@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/contacto.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    <div class="barra-superior">
-        *Envíos gratis en toda España*
+  <div class="barra-superior">
+    *Envíos gratis en toda España*
+  </div>
+
+  <header>
+    <nav class="barra-navegacion">
+
+      <!-- Navegación izquierda (solo escritorio) -->
+      <div class="navegacion-izquierda">
+        <a href="galeria.html">Galería</a>
+        <a href="exposGeneral.html">Expos</a>
+        <a href="sobreNosotros.html">Sobre Nosotros</a>
+      </div>
+
+      <!-- Logo -->
+      <div class="navegacion-centro">
+        <a href="index.html" class="logo">
+          <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
+        </a>
+      </div>
+
+      <!-- Navegación derecha (solo escritorio) -->
+      <div class="navegacion-derecha">
+        <a href="contacto.html" class="boton-contacto">Contacto</a>
+        <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
+      </div>
+
+      <!-- Botón hamburguesa (solo móvil) -->
+      <div class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Menú móvil desplegable -->
+    <div class="menu-movil">
+      <a href="galeria.html">Galería</a>
+      <a href="exposGeneral.html">Expos</a>
+      <a href="sobreNosotros.html">Sobre Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="pedidos.html">Pide tu Azulejo</a>
     </div>
+  </header>
 
-    <header>
-        <nav class="barra-navegacion">
-            <!-- LOGO visible solo en móvil -->
-            <a href="index.html" class="logo-movil">
-                <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-            </a>
+  <main class="contenedor-contacto">
+    <a href="https://www.instagram.com/the_tile_project?utm_source=ig_web_button_share_sheet&igsh=ZGw0OWZiZDRoNmIw" class="boton-red">Instagram</a>
+    <a href="https://www.tiktok.com/@thetileproject?is_from_webapp=1&sender_device=pc" class="boton-red">TikTok</a>
+    <a href="https://www.linkedin.com/company/the-tile-project/" class="boton-red">LinkedIn</a>
+    <a href="#" class="boton-red especial">Escríbenos</a>
+  </main>
 
-            <div class="navegacion-izquierda">
-                <a href="galeria.html">Galería</a>
-                <a href="exposGeneral.html">Expos</a>
-                <a href="sobreNosotros.html">Sobre Nosotros</a>
-            </div>
-
-            <div class="navegacion-centro">
-                <a href="index.html" class="logo">
-                    <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
-                </a>
-            </div>
-
-            <div class="navegacion-derecha">
-                <a href="contacto.html" class="boton-contacto">Contacto</a>
-                <a href="pedidos.html">Pide tu Azulejo</a>
-            </div>
-
-            <!-- Botón de menú hamburguesa para móvil -->
-            <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
-        </nav>
-
-        <!-- Menú desplegable para móvil -->
-        <div class="menu-desplegable" id="menuMovil">
-            <a href="galeria.html">Galería</a>
-            <a href="exposGeneral.html">Expos</a>
-            <a href="sobreNosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html" class="boton-contacto-movil">Contacto</a>
-            <a href="pedidos.html">Pide tu Azulejo</a>
-        </div>
-    </header>
-
-    <main class="contenedor-contacto">
-  <a href="https://www.instagram.com/the_tile_project?utm_source=ig_web_button_share_sheet&igsh=ZGw0OWZiZDRoNmIw" class="boton-red">Instagram</a>
-  <a href="https://www.tiktok.com/@thetileproject?is_from_webapp=1&sender_device=pc" class="boton-red">TikTok</a>
-  <a href="https://www.linkedin.com/company/the-tile-project/" class="boton-red">LinkedIn</a>
-  <a href="#" class="boton-red especial">Escríbenos</a>
-</main>
-
-    <script src="JavaScript.js"></script>
+  <script src="JavaScript.js"></script>
 </body>
 </html>

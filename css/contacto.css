@@ -17,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #333;
+  overflow-x: hidden;
 }
 
 /* =================== */
@@ -28,8 +29,8 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
-  height: 35px; /* <-- Reducción de la altura */
-  line-height: 35px; /* <-- Para centrar el texto verticalmente */
+  height: 35px;
+  line-height: 35px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -44,17 +45,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* <-- Reducción de altura de la barra */
+  height: 60px;
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
   position: fixed;
-  top: 35px; /* <-- Justo debajo de la barra superior */
+  top: 35px;
   left: 0;
   z-index: 1000;
 }
 
-.boton-contacto{
+.boton-contacto {
   font-family: 'MiFuente';
 }
 
@@ -67,93 +68,85 @@ body {
 .navegacion-izquierda a,
 .navegacion-derecha a {
   margin: 0 1.5rem;
-  font-size: 0.95rem; /* Ajustar tamaño si es necesario */
+  font-size: 0.95rem;
 }
 
 .navegacion-centro {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-33px); /* <-- Ajusta el desplazamiento a la izquierda */
+  transform: translateX(-25px);
 }
 
 .barra-navegacion a {
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 0.85rem; /* <-- Reduce el tamaño del texto aquí */
+  font-size: 0.85rem;
 }
 
 .barra-navegacion::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Grosor de la línea */
-  background-color: blue; /* Color negro MUY suave */
+  height: 1px;
+  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .imagen-logo {
-  height: 70px;  /* Aumenta el tamaño del logo */
+  height: 70px;
   object-fit: contain;
-  margin-left: -30px;  /* Mantén el desplazamiento si era necesario */
+  margin-left: -30px;
 }
 
-.menu-movil {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
-}
-
-/* Menú móvil desplegable */
-.menu-desplegable {
+/* =================== */
+/* MENÚ HAMBURGUESA   */
+/* =================== */
+.hamburguesa {
   display: none;
   flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 100px;
-  width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1002;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
-.menu-desplegable a {
-  padding: 0.5rem 0;
+.hamburguesa span {
+  height: 3px;
+  width: 25px;
+  background: blue;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Menú móvil oculto */
+.menu-movil {
+  display: none;
+  flex-direction: column;
+  background: white;
+  position: fixed;
+  top: 95px;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid blue;
+  z-index: 999;
+}
+
+.menu-movil a {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 1rem;
-}
-
-.menu-desplegable.activo {
-  display: flex;
+  text-align: center;
 }
 
 /* =================== */
-/* LOGO EN MÓVIL       */
-/* =================== */
-.logo-movil {
-  display: none;
-  align-items: center;
-}
-
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
-}
-
-/* =================== */
-/* BOTONES CENTRADOS  */
+/* BOTONES CONTACTO   */
 /* =================== */
 .contenedor-contacto {
-  margin-top: 250px; /* espacio por barra superior + nav */
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +157,7 @@ body {
 
 .boton-red {
   display: inline-block;
-  position: relative; /* Necesario para el ::after */
+  position: relative;
   width: 200px;
   padding: 0.5rem 1rem;
   border: 1px solid blue;
@@ -176,7 +169,7 @@ body {
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: visible; /* Permitir que el cuadradito salga fuera */
+  overflow: visible;
 }
 
 .boton-red::after {
@@ -185,9 +178,9 @@ body {
   width: 10px;
   height: 10px;
   background-color: blue;
-  bottom: -5px; /* Sale hacia abajo */
-  right: -5px;  /* Sale hacia la derecha */
-  transform: scale(0); /* Oculto inicialmente */
+  bottom: -5px;
+  right: -5px;
+  transform: scale(0);
   transition: transform 0.3s ease;
 }
 
@@ -199,46 +192,30 @@ body {
 }
 
 .boton-red:hover::after {
-  transform: scale(1); /* Aparece el cuadradito */
+  transform: scale(1);
 }
 
 /* =================== */
 /* RESPONSIVE         */
 /* =================== */
 @media (max-width: 768px) {
-  .logo-movil {
-    display: flex;
-  }
-
-  .imagen-logo-movil {
-    height: 50px;
-  }
-
   .navegacion-izquierda,
-  .navegacion-centro,
   .navegacion-derecha {
     display: none;
   }
 
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
+  .navegacion-centro {
+    transform: none;
+    margin-left: 1rem;
+    justify-content: flex-start;
   }
 
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  .imagen-logo {
+    margin-left: 0;
+    height: 60px;
   }
 
-  .barra-navegacion {
-    justify-content: space-between;
-  }
-
-  .boton-red {
-    width: 80%;
-    max-width: 250px;
+  .hamburguesa {
+    display: flex;
   }
 }
-

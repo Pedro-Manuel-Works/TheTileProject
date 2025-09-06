@@ -135,7 +135,6 @@ body {
   color: blue;
   font-weight: bold;
   text-align: center;
-  font-family: 'MiFuente', serif; /* <--- Asegura que todos tengan la misma fuente */
 }
 
 
