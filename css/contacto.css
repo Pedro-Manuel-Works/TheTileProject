@@ -218,4 +218,8 @@ body {
   .hamburguesa {
     display: flex;
   }
+
+  .contactoMovil{
+    font-family: 'MiFuente', serif;
+  }
 }

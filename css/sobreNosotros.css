@@ -100,7 +100,7 @@ body {
 
 /* --- HAMBURGUESA (MISMO DISEÑO) --- */
 .hamburguesa {
-  display: none; /* aparece sólo en móvil */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   margin-right: 1rem;
@@ -115,7 +115,7 @@ body {
   border-radius: 2px;
 }
 
-/* Menú móvil (oculto por defecto) */
+/* Menú móvil */
 .menu-movil {
   display: none;
   flex-direction: column;
@@ -136,7 +136,6 @@ body {
   font-weight: bold;
   text-align: center;
 }
-
 
 .menu-movil.activo {
   display: flex;
@@ -195,15 +194,13 @@ body {
   margin-top: 0.5rem; 
 }
 
-/* ------- RESPONSIVE: sólo afecta a móvil (no cambia escritorio) ------- */
+/* ------- RESPONSIVE: sólo móvil ------- */
 @media (max-width: 768px) {
-  /* Ocultar enlaces laterales de escritorio */
   .navegacion-izquierda,
   .navegacion-derecha {
     display: none;
   }
 
-  /* Alinear el bloque central (logo) a la izquierda en móvil */
   .navegacion-centro {
     transform: none;
     margin-left: 1rem;
@@ -215,17 +212,14 @@ body {
     height: 60px;
   }
 
-  /* Mostrar hamburguesa */
   .hamburguesa {
     display: flex;
   }
 
-  /* Activar menú móvil (por JS añade .activo) */
   .menu-movil {
     display: none;
   }
 
-  /* Ajustes de contenido en móvil */
   .equipo {
     flex-direction: column;
     align-items: center;
@@ -240,5 +234,10 @@ body {
     font-size: 0.9rem;
     padding: 0 1rem;
     text-align: center;
+  }
+
+  /* Enlace activo en el menú móvil */
+  .sobreNosotrosMovil {
+    font-family: 'MiFuente', serif;
   }
 }
