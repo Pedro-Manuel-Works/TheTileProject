@@ -101,7 +101,7 @@ body {
   margin-left: -30px;
 }
 
-/* --- MENU HAMBURGUESA (MÓVIL, igual que en index) --- */
+/* --- MENU HAMBURGUESA (MÓVIL) --- */
 .hamburguesa {
   display: none;
   flex-direction: column;
@@ -155,7 +155,7 @@ body {
 .contenedor-expo {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   gap: 40px;
   width: 100%;
   flex-wrap: nowrap;
@@ -179,11 +179,12 @@ body {
 .info-expo {
   display: flex;
   flex-direction: column;
+  justify-content: center;   /* centra vertical en escritorio */
   align-items: center;
   text-align: center;
-  margin-top: 150px;
   color: blue;
   font-family: 'MiFuente', serif;
+  flex: 1;
 }
 
 .info-expo p {
@@ -231,6 +232,7 @@ body {
   .info-expo {
     order: -1;
     text-align: center;
+    margin-top: 40px; /* 👈 Separación extra solo en móvil */
   }
 
   .cuadricula-imagenes {
@@ -243,9 +245,3 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .cuadricula-imagenes {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
