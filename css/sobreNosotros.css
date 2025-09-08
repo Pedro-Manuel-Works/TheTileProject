@@ -52,7 +52,8 @@ body {
 }
 
 .sobreNosotros- {
-  font-family: 'MiFuente';
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
 }
 
 .navegacion-izquierda,
@@ -165,7 +166,8 @@ body {
 }
 
 .miembro {
-  font-family: 'MiFuente', serif;
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
   color: #001aa2;
   font-size: 0.85rem;
   margin-bottom: 0.2rem;
@@ -184,7 +186,8 @@ body {
 }
 
 .nombre-miembro {
-  font-family: 'MiFuente';
+  font-family: "Instrument Serif", serif;
+  
 }
 
 .descrip {
