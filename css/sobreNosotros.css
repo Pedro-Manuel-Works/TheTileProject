@@ -118,10 +118,14 @@ body {
 }
 
 /* Menú móvil */
-.menu-movil {
+
+.sobreNosotrosMovil{
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.menu-movil {
   display: none;
   flex-direction: column;
   background: white;
