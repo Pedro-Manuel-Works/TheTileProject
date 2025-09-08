@@ -119,6 +119,9 @@ body {
 
 /* Menú móvil */
 .menu-movil {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
   display: none;
   flex-direction: column;
   background: white;
