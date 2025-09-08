@@ -49,6 +49,7 @@ body {
 
 .boton-contacto {
   font-family: "Instrument Serif", serif;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -179,6 +180,7 @@ body {
 
 .boton-red:hover {
   font-family: "Instrument Serif", serif;
+  font-weight: 400;
   font-style: italic;
   font-weight: normal;
   cursor: pointer;
@@ -214,6 +216,7 @@ body {
 
   .contactoMovil{
     font-family: "Instrument Serif", serif;
+    font-weight: 400;
     font-style: italic;
   }
 }

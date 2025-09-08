@@ -47,6 +47,7 @@ body {
 
 .boton-pedido {
   font-family: "Instrument Serif", serif;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -133,6 +134,7 @@ body {
 
 .menu-movil a.boton-pedido-movil {
   font-family: "Instrument Serif", serif;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -229,6 +231,7 @@ body {
 
 .texto-azulejo {
   font-family: "Instrument Serif", serif;
+  font-weight: 400;
   font-style: italic;
   font-size: 1rem;
   color: blue;
