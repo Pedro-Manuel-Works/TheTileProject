@@ -16,6 +16,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #333;
+  overflow-x: hidden;
 }
 
 /* =================== */
@@ -27,8 +28,8 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
-  height: 35px; /* <-- Reducción de la altura */
-  line-height: 35px; /* <-- Para centrar el texto verticalmente */
+  height: 35px;
+  line-height: 35px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -43,17 +44,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* <-- Reducción de altura de la barra */
+  height: 60px;
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
   position: fixed;
-  top: 35px; /* <-- Justo debajo de la barra superior */
+  top: 35px;
   left: 0;
   z-index: 1000;
 }
 
-.expo1{
+.expo1 {
   font-family: 'MiFuente';
 }
 
@@ -66,150 +67,106 @@ body {
 .navegacion-izquierda a,
 .navegacion-derecha a {
   margin: 0 1.5rem;
-  font-size: 0.95rem; /* Ajustar tamaño si es necesario */
+  font-size: 0.95rem;
 }
 
 .navegacion-centro {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-25px); /* <-- Ajusta el desplazamiento a la izquierda */
+  transform: translateX(-25px);
 }
 
 .barra-navegacion a {
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 0.85rem; /* <-- Reduce el tamaño del texto aquí */
+  font-size: 0.85rem;
 }
 
 .barra-navegacion::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Grosor de la línea */
-  background-color: blue; /* Color negro MUY suave */
+  height: 1px;
+  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .imagen-logo {
-  height: 70px;  /* Aumenta el tamaño del logo */
+  height: 70px;
   object-fit: contain;
-  margin-left: -30px;  /* Mantén el desplazamiento si era necesario */
+  margin-left: -30px;
 }
 
-.menu-movil {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
-}
-
-/* Menú móvil desplegable */
-.menu-desplegable {
+/* --- MENU HAMBURGUESA (MÓVIL, igual que en index) --- */
+.hamburguesa {
   display: none;
   flex-direction: column;
-  background-color: white;
-  padding: 1rem 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.hamburguesa span {
+  height: 3px;
+  width: 25px;
+  background: blue;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Menú móvil oculto */
+.menu-movil {
+  display: none;
+  flex-direction: column;
+  background: white;
   position: fixed;
-  top: 100px;
+  top: 95px; /* 35px barra-superior + 60px nav */
+  right: 0;
   width: 100%;
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1002;
+  border-top: 1px solid blue;
+  z-index: 999;
 }
 
-.exposMovil{
-    font-family: 'MiFuente', sans-serif;
-}
-
-.menu-desplegable a {
-  padding: 0.5rem 0;
+.menu-movil a {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
   text-decoration: none;
   color: blue;
   font-weight: bold;
-  font-size: 1rem;
+  text-align: center;
 }
 
-.menu-desplegable.activo {
+.menu-movil.activo {
   display: flex;
-}
-
-/* =================== */
-/* LOGO EN MÓVIL       */
-/* =================== */
-.logo-movil {
-  display: none;
-  align-items: center;
-}
-
-.imagen-logo-movil {
-  height: 60px;
-  object-fit: contain;
-}
-
-@media (max-width: 768px) {
-  .logo-movil {
-    display: flex;
-  }
-
-  .imagen-logo-movil {
-    height: 50px;
-  }
-
-  .navegacion-izquierda,
-  .navegacion-centro,
-  .navegacion-derecha {
-    display: none;
-  }
-
-  .menu-movil {
-    display: block;
-    font-size: 1.8rem;
-    margin-left: auto;
-  }
-
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .barra-navegacion {
-    justify-content: space-between;
-  }
 }
 
 /* =================== */
 /* CONTENIDO EXPOSICIÓN */
 /* =================== */
-
 .contenido-expo {
-  padding: 0px; /* espacio por el navbar */
+  padding: 0;
   background-color: #fff;
   margin-top: 95px;
 }
 
 .contenedor-expo {
   display: flex;
-  justify-content: flex-start; /* <-- Pega los cuadros a la izquierda */
-  align-items: center; /* <-- Centra verticalmente el texto */
+  justify-content: flex-start;
+  align-items: center;
   gap: 40px;
-  width: 100%; /* <-- Usa todo el ancho */
-  flex-wrap: nowrap; /* <-- Evita que se bajen de línea */
+  width: 100%;
+  flex-wrap: nowrap;
   max-width: none;
 }
 
-/* Cuadrícula de imágenes */
 .cuadricula-imagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  width: 60%; /* <-- Ocupa el 60% a la izquierda */
+  width: 60%;
 }
 
 .imagen-cuadro img {
@@ -219,24 +176,10 @@ body {
   border: 1px solid #ccc;
 }
 
-/* Texto de la exposición */
 .info-expo {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  /* <-- Esto lo sube hacia arriba */
-  align-self: flex-start;       /* <-- Esto alinea el bloque al top de los cuadros */
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-  margin-top: 150px;
-}
-
-
-.info-expo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; /* centra el contenido */
+  align-items: center;
   text-align: center;
   margin-top: 150px;
   color: blue;
@@ -250,11 +193,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 1rem;
   line-height: 1.6;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
+  .navegacion-izquierda,
+  .navegacion-derecha {
+    display: none;
+  }
+
+  .navegacion-centro {
+    transform: none;
+    margin-left: 1rem;
+    justify-content: flex-start;
+  }
+
+  .imagen-logo {
+    margin-left: 0;
+    height: 60px;
+  }
+
+  .hamburguesa {
+    display: flex;
+  }
+
+  .menu-movil {
+    display: none;
+  }
+
   .contenedor-expo {
     flex-direction: column;
     align-items: center;
@@ -269,7 +236,6 @@ body {
   .cuadricula-imagenes {
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    
   }
 
   .imagen-cuadro img {

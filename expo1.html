@@ -1,92 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expo 1</title>
-    <link rel="stylesheet" href="css/expo1.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expo 1</title>
+  <link rel="stylesheet" href="css/expo1.css">
 </head>
-
 <body>
-    <div class="barra-superior">
-        *Envíos gratis en toda España*
-    </div>
-
-    <header>
-        <nav class="barra-navegacion">
-            <!-- LOGO visible solo en móvil -->
-            <a href="index.html" class="logo-movil">
-                <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-            </a>
-
-            <div class="navegacion-izquierda">
-                <a href="galeria.html">Galería</a>
-                <a href="exposGeneral.html" class="expo1">Expos</a>
-                <a href="sobreNosotros.html">Sobre Nosotros</a>
-            </div>
-
-            <div class="navegacion-centro">
-                <a href="index.html" class="logo">
-                    <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
-                </a>
-            </div>
-
-            <div class="navegacion-derecha">
-                <a href="contacto.html" class="boton-contacto">Contacto</a>
-                <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
-            </div>
-
-            <!-- Botón de menú hamburguesa para móvil -->
-            <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
-        </nav>
-
-        <!-- Menú desplegable para móvil -->
-        <div class="menu-desplegable" id="menuMovil">
-            <a href="galeria.html" class="galeria">Galería</a>
-            <a href="exposGeneral.html" class="exposMovil">Expos</a>
-            <a href="sobreNosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="pedidos.html">Pide tu Azulejo</a>
-        </div>
-    </header>
-
-    <main class="contenido-expo">
-  <div class="contenedor-expo">
-    <div class="cuadricula-imagenes">
-      <div class="imagen-cuadro"><img src="img/GIF_Oviedo-2.gif" alt="Imagen 1"></div>
-      <div class="imagen-cuadro"><img src="img/8.png" alt="Imagen 2"></div>
-      <div class="imagen-cuadro"><img src="img/10.png" alt="Imagen 3"></div>
-      <div class="imagen-cuadro"><img src="img/GIF_Oviedo-3.gif" alt="Imagen 4"></div>
-    </div>
-    <div class="info-expo">
-      Azulejos, <br>Vaques y el Nano - <br>Oviedo, Asturias
-
-      <p><b>Del 18 de julio al 28 de agosto de 2024, el espacio 451 de Oviedo se convirtió en un playground
-de creatividad, con una muestra que reinterpretaba los iconos más icónicos de Asturias desde
-nuestra perspectiva contemporánea.
-<br>
-<br>
- Tradición y modernidad se mezclaban, transformando
-azulejos en píxeles y píxeles en azulejos, en un juego visual que conectaba la memoria colectiva
-con la era digital.
-<br>
-<br>
-Los visitantes podían encontrarse con la Santina y las madreñas, fabada y queso Cabrales, y
-hasta guiños a Fernando Alonso o Melendi. Todo convivía con símbolos cotidianos —desde el
-supermercado Alimerka hasta la discoteca SalsiPuedes— en composiciones que sorprendían y
-hacían pop.
-<br>
-<br>
-La exposición combinaba piezas pictóricas, escultóricas, audiovisuales y murales, con escenas
-inesperadas —como vacas volando— que añadían humor y frescura, donde nuestra visión de
-marca daba movimiento y vida a las raíces asturianas.</b></p>
-    </div>
+  <div class="barra-superior">
+    *Envíos gratis en toda España*
   </div>
-</main>
 
+  <header>
+    <nav class="barra-navegacion">
+      <!-- Navegación izquierda (solo escritorio) -->
+      <div class="navegacion-izquierda">
+        <a href="galeria.html">Galería</a>
+        <a href="exposGeneral.html" class="expo1">Expos</a>
+        <a href="sobreNosotros.html">Sobre Nosotros</a>
+      </div>
 
-    <script src="JavaScript.js"></script>
+      <!-- Logo -->
+      <div class="navegacion-centro">
+        <a href="index.html" class="logo">
+          <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
+        </a>
+      </div>
+
+      <!-- Navegación derecha (solo escritorio) -->
+      <div class="navegacion-derecha">
+        <a href="contacto.html" class="boton-contacto">Contacto</a>
+        <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
+      </div>
+
+      <!-- Botón hamburguesa (solo móvil) -->
+      <div class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Menú móvil desplegable -->
+    <div class="menu-movil">
+      <a href="galeria.html">Galería</a>
+      <a href="exposGeneral.html" class="exposMovil">Expos</a>
+      <a href="sobreNosotros.html">Sobre Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="pedidos.html">Pide tu Azulejo</a>
+    </div>
+  </header>
+
+  <main class="contenido-expo">
+    <div class="contenedor-expo">
+      <div class="cuadricula-imagenes">
+        <div class="imagen-cuadro"><img src="img/GIF_Oviedo-2.gif" alt="Imagen 1"></div>
+        <div class="imagen-cuadro"><img src="img/8.png" alt="Imagen 2"></div>
+        <div class="imagen-cuadro"><img src="img/10.png" alt="Imagen 3"></div>
+        <div class="imagen-cuadro"><img src="img/GIF_Oviedo-3.gif" alt="Imagen 4"></div>
+      </div>
+      <div class="info-expo">
+        Azulejos, <br>Vaques y el Nano - <br>Oviedo, Asturias
+        <p><b>
+          Del 18 de julio al 28 de agosto de 2024, el espacio 451 de Oviedo se convirtió en un playground
+          de creatividad, con una muestra que reinterpretaba los iconos más icónicos de Asturias desde
+          nuestra perspectiva contemporánea.
+          <br><br>
+          Tradición y modernidad se mezclaban, transformando azulejos en píxeles y píxeles en azulejos,
+          en un juego visual que conectaba la memoria colectiva con la era digital.
+          <br><br>
+          Los visitantes podían encontrarse con la Santina y las madreñas, fabada y queso Cabrales, y
+          hasta guiños a Fernando Alonso o Melendi. Todo convivía con símbolos cotidianos —desde el
+          supermercado Alimerka hasta la discoteca SalsiPuedes— en composiciones que sorprendían y
+          hacían pop.
+          <br><br>
+          La exposición combinaba piezas pictóricas, escultóricas, audiovisuales y murales, con escenas
+          inesperadas —como vacas volando— que añadían humor y frescura, donde nuestra visión de
+          marca daba movimiento y vida a las raíces asturianas.
+        </b></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="JavaScript.js"></script>
 </body>
 </html>

@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expo 2</title>
-    <link rel="stylesheet" href="css/expo2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expo 2</title>
+  <link rel="stylesheet" href="css/expo2.css">
 </head>
 <body>
-    <div class="barra-superior">
-        *Envíos gratis en toda España*
-    </div>
-
-    <header>
-        <nav class="barra-navegacion">
-            <!-- LOGO visible solo en móvil -->
-            <a href="index.html" class="logo-movil">
-                <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-            </a>
-
-            <div class="navegacion-izquierda">
-                <a href="galeria.html">Galería</a>
-                <a href="exposGeneral.html" class="expo2">Expos</a>
-                <a href="sobreNosotros.html">Sobre Nosotros</a>
-            </div>
-
-            <div class="navegacion-centro">
-                <a href="index.html" class="logo">
-                    <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
-                </a>
-            </div>
-
-            <div class="navegacion-derecha">
-                <a href="contacto.html" class="boton-contacto">Contacto</a>
-                <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
-            </div>
-
-            <!-- Botón de menú hamburguesa para móvil -->
-            <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
-        </nav>
-
-        <!-- Menú desplegable para móvil -->
-        <div class="menu-desplegable" id="menuMovil">
-            <a href="galeria.html" class="galeria">Galería</a>
-            <a href="exposGeneral.html" class="exposMovil">Expos</a>
-            <a href="#sobreNosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="pedidos.html">Pide tu Azulejo</a>
-        </div>
-    </header>
-
-    <main class="contenido-expo">
-  <div class="contenedor-expo">
-    <div class="cuadricula-imagenes">
-      <div class="imagen-cuadro"><img src="img/GIF_Logroño-1.gif" alt="Imagen 1"></div>
-      <div class="imagen-cuadro"><img src="img/Logroño.png" alt="Imagen 2"></div>
-      <div class="imagen-cuadro"><img src="img/Logroño2.png" alt="Imagen 3"></div>
-      <div class="imagen-cuadro"><img src="img/GIF_Logroño-2.gif" alt="Imagen 4"></div>
-    </div>
-    <div class="info-expo">
-      26001-09 <br>- La gota de leche,<br>Logroño
-
-      <p><b>Durante todo febrero de 2024, La Gota de Leche de Logroño se llenó de nuestra mirada sobre la
-ciudad y nuestras experiencias como colectivo.
-<br>
-<br> La calle Laurel, el bar El Embaucador o las fachadas más emblemáticas se entrelazaban con recuerdos compartidos, creando una narrativa
-visual única y sorprendente.
-<br>
-<br>
-La muestra incluía tres murales de gran formato (2,5 m x 2,5 m), mapas interactivos con los
-azulejos repartidos por el mundo, piezas audiovisuales en 3D y azulejos unitarios inspirados en la
-iconografía logroñesa. 
-<br>
-<br>
-Cada obra invitaba a mirar de cerca, jugar con los detalles y descubrir
-nuevas conexiones entre lo local y lo personal.</b></p>
-    </div>
+  <div class="barra-superior">
+    *Envíos gratis en toda España*
   </div>
-</main>
 
-    <script src="JavaScript.js"></script>
+  <header>
+    <nav class="barra-navegacion">
+      <!-- Navegación izquierda (solo escritorio) -->
+      <div class="navegacion-izquierda">
+        <a href="galeria.html">Galería</a>
+        <a href="exposGeneral.html" class="expo2">Expos</a>
+        <a href="sobreNosotros.html">Sobre Nosotros</a>
+      </div>
+
+      <!-- Logo -->
+      <div class="navegacion-centro">
+        <a href="index.html" class="logo">
+          <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
+        </a>
+      </div>
+
+      <!-- Navegación derecha (solo escritorio) -->
+      <div class="navegacion-derecha">
+        <a href="contacto.html" class="boton-contacto">Contacto</a>
+        <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
+      </div>
+
+      <!-- Botón hamburguesa (solo móvil) -->
+      <div class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Menú móvil desplegable -->
+    <div class="menu-movil">
+      <a href="galeria.html">Galería</a>
+      <a href="exposGeneral.html" class="exposMovil">Expos</a>
+      <a href="sobreNosotros.html">Sobre Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="pedidos.html">Pide tu Azulejo</a>
+    </div>
+  </header>
+
+  <main class="contenido-expo">
+    <div class="contenedor-expo">
+      <div class="cuadricula-imagenes">
+        <div class="imagen-cuadro"><img src="img/GIF_Logroño-1.gif" alt="Imagen 1"></div>
+        <div class="imagen-cuadro"><img src="img/Logroño.png" alt="Imagen 2"></div>
+        <div class="imagen-cuadro"><img src="img/Logroño2.png" alt="Imagen 3"></div>
+        <div class="imagen-cuadro"><img src="img/GIF_Logroño-2.gif" alt="Imagen 4"></div>
+      </div>
+      <div class="info-expo">
+        26001-09 <br>- La gota de leche,<br>Logroño
+        <p><b>
+          Durante todo febrero de 2024, La Gota de Leche de Logroño se llenó de nuestra mirada sobre la
+          ciudad y nuestras experiencias como colectivo.
+          <br><br>
+          La calle Laurel, el bar El Embaucador o las fachadas más emblemáticas se entrelazaban con recuerdos compartidos, creando una narrativa visual única y sorprendente.
+          <br><br>
+          La muestra incluía tres murales de gran formato (2,5 m x 2,5 m), mapas interactivos con los
+          azulejos repartidos por el mundo, piezas audiovisuales en 3D y azulejos unitarios inspirados en la
+          iconografía logroñesa. 
+          <br><br>
+          Cada obra invitaba a mirar de cerca, jugar con los detalles y descubrir
+          nuevas conexiones entre lo local y lo personal.
+        </b></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="JavaScript.js"></script>
 </body>
 </html>
