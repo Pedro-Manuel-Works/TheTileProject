@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MiFuente';
+  src: url('/fonts/transfonter.org-20250710-155859/InstrumentSerif-Italic.woff2') format('woff2'),
+       url('/fonts/transfonter.org-20250710-155859/InstrumentSerif-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
@@ -128,6 +136,12 @@ body {
   color: blue;
   font-weight: bold;
   text-align: center;
+}
+
+.exposMovil {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* RESPONSIVE */
