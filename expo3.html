@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expo 3</title>
-    <link rel="stylesheet" href="css/expo3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expo 3</title>
+  <link rel="stylesheet" href="css/expo3.css">
 </head>
 <body>
-    <div class="barra-superior">
-        *Envíos gratis en toda España*
-    </div>
-
-    <header>
-        <nav class="barra-navegacion">
-            <!-- LOGO visible solo en móvil -->
-            <a href="index.html" class="logo-movil">
-                <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo-movil">
-            </a>
-
-            <div class="navegacion-izquierda">
-                <a href="galeria.html">Galería</a>
-                <a href="exposGeneral.html" class="expo3">Expos</a>
-                <a href="sobreNosotros.html">Sobre Nosotros</a>
-            </div>
-
-            <div class="navegacion-centro">
-                <a href="index.html" class="logo">
-                    <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
-                </a>
-            </div>
-
-            <div class="navegacion-derecha">
-                <a href="contacto.html" class="boton-contacto">Contacto</a>
-                <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
-            </div>
-
-            <!-- Botón de menú hamburguesa para móvil -->
-            <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
-        </nav>
-
-        <!-- Menú desplegable para móvil -->
-        <div class="menu-desplegable" id="menuMovil">
-            <a href="galeria.html" class="galeria">Galería</a>
-            <a href="exposGeneral.html" class="exposMovil">Expos</a>
-            <a href="sobreNosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="pedidos.html">Pide tu Azulejo</a>
-        </div>
-    </header>
-
-    <main class="contenido-expo">
-  <div class="contenedor-expo">
-    <div class="cuadricula-imagenes">
-      <div class="imagen-cuadro"><img src="img/GIF_POPS-1.gif" alt="Imagen 1"></div>
-      <div class="imagen-cuadro"><img src="img/pop1.png" alt="Imagen 2"></div>
-      <div class="imagen-cuadro"><img src="img/pop2.png" alt="Imagen 3"></div>
-      <div class="imagen-cuadro"><img src="img/GIF_POPS-3.gif" alt="Imagen 4"></div>
-    </div>
-    <div class="info-expo">
-      Pop - ups <br> y <br> Colaboraciones
-
-      <p><b>Nuestras pop-ups son como pequeñas cápsulas creativas: intervenciones efímeras donde
-llevamos nuestro universo a nuevos contextos, adaptando el juego visual de The Tile Project a
-cada lugar. Momentos para experimentar, sorprender y conectar de forma directa con el público,
-siempre con nuestro sello distintivo.
-<br>
-<br>
-JingaFest – Burgos, 2024 y 2025
-Invitados durante dos ediciones consecutivas, desplegamos un mural de 2 m x 2 m que
-capturaba la vibra del festival y la esencia de Burgos. Nuestro stand propio se convirtió en un mini
-playground donde los símbolos locales bailaban con la energía del público y del evento.
-<br>
-<br>
-Bilbao – Espacio artístico local
-En un espacio de artistas emergentes, instalamos un mural en la fachada que homenajeaba al
-Athletic Club de Bilbao, mezclando iconos del equipo con nuestro lenguaje visual: un guiño entre
-tradición y visual play.
-<br>
-<br>
-Madrid – Espacio Vemente y Assisting Fashion
-En ambas ocasiones llevamos nuestra visión a piezas en azulejo inspiradas en la ciudad. La
-propuesta jugaba con elementos clásicos y pop, mezclando símbolos locales con referentes
-contemporáneos, desde memes hasta figuras icónicas como Paris Hilton, Kim Kardashian,
-Britney Spears o Hello Kitty. Contrastes inesperados fun & bold.</b></p>
-    </div>
+  <div class="barra-superior">
+    *Envíos gratis en toda España*
   </div>
-</main>
 
+  <header>
+    <nav class="barra-navegacion">
+      <!-- Navegación izquierda (solo escritorio) -->
+      <div class="navegacion-izquierda">
+        <a href="galeria.html">Galería</a>
+        <a href="exposGeneral.html" class="expo3">Expos</a>
+        <a href="sobreNosotros.html">Sobre Nosotros</a>
+      </div>
 
-    <script src="JavaScript.js"></script>
+      <!-- Logo -->
+      <div class="navegacion-centro">
+        <a href="index.html" class="logo">
+          <img src="img/Logo The Tile Project.png" alt="Logo The Tile Project" class="imagen-logo">
+        </a>
+      </div>
+
+      <!-- Navegación derecha (solo escritorio) -->
+      <div class="navegacion-derecha">
+        <a href="contacto.html" class="boton-contacto">Contacto</a>
+        <a href="pedidos.html" class="boton-pedido">Pide tu Azulejo</a>
+      </div>
+
+      <!-- Botón hamburguesa (solo móvil) -->
+      <div class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Menú móvil desplegable -->
+    <div class="menu-movil">
+      <a href="galeria.html">Galería</a>
+      <a href="exposGeneral.html" class="exposMovil">Expos</a>
+      <a href="sobreNosotros.html">Sobre Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="pedidos.html">Pide tu Azulejo</a>
+    </div>
+  </header>
+
+  <main class="contenido-expo">
+    <div class="contenedor-expo">
+      <div class="cuadricula-imagenes">
+        <div class="imagen-cuadro"><img src="img/GIF_POPS-1.gif" alt="Imagen 1"></div>
+        <div class="imagen-cuadro"><img src="img/pop1.png" alt="Imagen 2"></div>
+        <div class="imagen-cuadro"><img src="img/pop2.png" alt="Imagen 3"></div>
+        <div class="imagen-cuadro"><img src="img/GIF_POPS-3.gif" alt="Imagen 4"></div>
+      </div>
+      <div class="info-expo">
+        Pop - ups <br> y <br> Colaboraciones
+        <p><b>
+          Nuestras pop-ups son como pequeñas cápsulas creativas: intervenciones efímeras donde
+          llevamos nuestro universo a nuevos contextos, adaptando el juego visual de The Tile Project a
+          cada lugar. Momentos para experimentar, sorprender y conectar de forma directa con el público,
+          siempre con nuestro sello distintivo.
+          <br><br>
+          JingaFest – Burgos, 2024 y 2025
+          Invitados durante dos ediciones consecutivas, desplegamos un mural de 2 m x 2 m que
+          capturaba la vibra del festival y la esencia de Burgos. Nuestro stand propio se convirtió en un mini
+          playground donde los símbolos locales bailaban con la energía del público y del evento.
+          <br><br>
+          Bilbao – Espacio artístico local
+          En un espacio de artistas emergentes, instalamos un mural en la fachada que homenajeaba al
+          Athletic Club de Bilbao, mezclando iconos del equipo con nuestro lenguaje visual: un guiño entre
+          tradición y visual play.
+          <br><br>
+          Madrid – Espacio Vemente y Assisting Fashion
+          En ambas ocasiones llevamos nuestra visión a piezas en azulejo inspiradas en la ciudad. La
+          propuesta jugaba con elementos clásicos y pop, mezclando símbolos locales con referentes
+          contemporáneos, desde memes hasta figuras icónicas como Paris Hilton, Kim Kardashian,
+          Britney Spears o Hello Kitty. Contrastes inesperados fun & bold.
+        </b></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="JavaScript.js"></script>
 </body>
 </html>
