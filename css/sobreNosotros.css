@@ -152,7 +152,7 @@ body {
 .texto-descriptivo {
   max-width: 900px;
   margin: 0 auto 3rem auto;
-  color: #001aa2;
+  color: blue;
   font-size: 0.85rem;
   line-height: 1.6;
 }
@@ -171,7 +171,7 @@ body {
   font-style: italic;
   text-align: center;
   max-width: 200px;
-  color: #001aa2;
+  color: blue;
 }
 
 .foto-miembro {
@@ -186,12 +186,12 @@ body {
 
 .nombre-miembro {
   font-size: 0.9rem;
-  color: #001aa2;
+  color: blue;
 }
 
 .descrip {
   font-size: 0.85rem;
-  color: #001aa2;
+  color: blue;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal; /* 👈 sin cursiva */
   margin-top: 0.5rem; 
