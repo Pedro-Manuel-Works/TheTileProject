@@ -35,6 +35,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1001;
+  text-align: right;    
+  padding-right: 668px;
 }
 
 /* =================== */
@@ -76,7 +78,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-25px);
+  transform: translateX(-19px);
 }
 
 .barra-navegacion a {
@@ -125,7 +127,7 @@ body {
   flex-direction: column;
   background: white;
   position: fixed;
-  top: 95px; /* 35px barra-superior + 60px nav */
+  top: 95px; 
   right: 0;
   width: 100%;
   border-top: 1px solid blue;
@@ -181,13 +183,13 @@ body {
 .info-expo {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* centra vertical en escritorio */
+  justify-content: center;   
   align-items: center;
   text-align: center;
   color: blue;
   font-family: "Instrument Serif", serif;
   font-weight: 400;
-  font-style: italic;  /* 👈 mantiene cursiva SOLO en el título */
+  font-style: italic;  
   flex: 1;
 }
 
@@ -197,12 +199,11 @@ body {
   color: blue;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-style: normal;  /* 👈 aquí se quita la cursiva */
+  font-style: normal;  
   margin-bottom: 1rem;
   line-height: 1.6;
   margin-top: 2rem;
 }
-
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
@@ -239,7 +240,7 @@ body {
   .info-expo {
     order: -1;
     text-align: center;
-    margin-top: 40px; /* 👈 Separación extra solo en móvil */
+    margin-top: 40px;
   }
 
   .cuadricula-imagenes {
@@ -249,5 +250,10 @@ body {
 
   .imagen-cuadro img {
     max-width: 100%;
+  }
+
+  .barra-superior {
+    text-align: center;
+    padding-right: 0;
   }
 }
