@@ -186,7 +186,7 @@ body {
 }
 
 .titu{
-  font-family: "Instrument Serif", serif;
+  font-family: "Instrument Serif", serif !important;
   font-weight: 400;
   font-style: italic; 
 }
