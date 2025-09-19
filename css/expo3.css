@@ -185,6 +185,12 @@ body {
   flex: 1;
 }
 
+.titu{
+  font-family: "Instrument Serif", serif !important;
+  font-weight: 400;
+  font-style: italic; 
+}
+
 .info-expo p {
   max-width: 290px;
   font-size: 0.8rem;

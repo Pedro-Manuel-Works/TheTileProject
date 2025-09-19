@@ -54,6 +54,12 @@ body {
   font-style: italic;
 }
 
+.titu{
+  font-family: "Instrument Serif", serif !important;
+  font-weight: 400;
+  font-style: italic; 
+}
+
 .navegacion-izquierda,
 .navegacion-derecha {
   display: flex;
