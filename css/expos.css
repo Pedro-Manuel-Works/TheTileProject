@@ -34,7 +34,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1001;
-  text-align: center; /* 🔥 Siempre centrado */
+  text-align: center; 
   padding-right: 15px;
 }
 
