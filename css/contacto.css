@@ -11,9 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* =================== */
-/* BARRA SUPERIOR     */
-/* =================== */
+
 .barra-superior {
   background-color: blue;
   color: white;
@@ -30,9 +28,7 @@ body {
   padding-right: 15px;
 }
 
-/* =================== */
-/* NAVBAR             */
-/* =================== */
+
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
@@ -96,9 +92,7 @@ body {
   margin-left: -30px;
 }
 
-/* =================== */
-/* MENÚ HAMBURGUESA   */
-/* =================== */
+
 .hamburguesa {
   display: none;
   flex-direction: column;
@@ -114,7 +108,6 @@ body {
   border-radius: 2px;
 }
 
-/* Menú móvil oculto */
 .menu-movil {
   display: none;
   flex-direction: column;
@@ -123,7 +116,6 @@ body {
   top: 95px;
   right: 0;
   width: 100%;
-  border-top: 1px solid blue;
   z-index: 999;
 }
 
@@ -136,9 +128,7 @@ body {
   text-align: center;
 }
 
-/* =================== */
-/* BOTONES CONTACTO   */
-/* =================== */
+
 .contenedor-contacto {
   margin-top: 250px;
   display: flex;
@@ -178,9 +168,7 @@ body {
   transform: scale(1);
 }
 
-/* =================== */
-/* RESPONSIVE         */
-/* =================== */
+
 @media (max-width: 768px) {
   .navegacion-izquierda,
   .navegacion-derecha {

@@ -12,11 +12,9 @@ body {
   overflow-x: hidden;
 }
 
-/* BARRA SUPERIOR */
 .barra-superior {
   background-color: blue;
   color: white;
-  text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
   height: 35px;
@@ -26,9 +24,11 @@ body {
   top: 0;
   left: 0;
   z-index: 1001;
+  text-align: center;  
+  padding-right: 0; 
 }
 
-/* NAVBAR (NO CAMBIAR EN ESCRITORIO) */
+
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ body {
   margin-left: -30px;
 }
 
-/* --- HAMBURGUESA (MISMO DISEÑO) --- */
+
 .hamburguesa {
   display: none;
   flex-direction: column;
@@ -109,7 +109,7 @@ body {
   border-radius: 2px;
 }
 
-/* Menú móvil */
+
 
 .sobreNosotrosMovil{
   font-family: "Instrument Serif", serif;
@@ -125,7 +125,6 @@ body {
   top: 95px; 
   right: 0;
   width: 100%;
-  border-top: 1px solid blue;
   z-index: 999;
 }
 
@@ -142,7 +141,7 @@ body {
   display: flex;
 }
 
-/* CONTENIDO SOBRE NOSOTROS (no tocar escritorio) */
+
 .contenido-sobre-nosotros {
   margin-top: 150px;
   padding: 2rem 1rem;
@@ -197,7 +196,7 @@ body {
   margin-top: 0.5rem; 
 }
 
-/* ------- RESPONSIVE: sólo móvil ------- */
+
 @media (max-width: 768px) {
   .navegacion-izquierda,
   .navegacion-derecha {
@@ -239,7 +238,7 @@ body {
     text-align: center;
   }
 
-  /* Enlace activo en el menú móvil */
+
   .sobreNosotrosMovil {
     font-family: "Instrument Serif", serif;
     font-weight: 400;

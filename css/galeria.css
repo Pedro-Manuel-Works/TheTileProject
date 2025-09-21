@@ -11,9 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* =================== */
-/* BARRA SUPERIOR     */
-/* =================== */
+
 .barra-superior {
   background-color: blue;
   color: white;
@@ -29,9 +27,7 @@ body {
   z-index: 1001;
 }
 
-/* =================== */
-/* NAVBAR             */
-/* =================== */
+
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
@@ -95,9 +91,7 @@ body {
   margin-left: -30px;
 }
 
-/* =================== */
-/* MENÚ HAMBURGUESA   */
-/* =================== */
+
 .hamburguesa {
   display: none;
   flex-direction: column;
@@ -113,7 +107,7 @@ body {
   border-radius: 2px;
 }
 
-/* Menú móvil (oculto por defecto) */
+
 .menu-movil {
   display: none;
   flex-direction: column;
@@ -122,7 +116,6 @@ body {
   top: 95px;
   right: 0;
   width: 100%;
-  border-top: 1px solid blue;
   z-index: 999;
 }
 
@@ -141,9 +134,6 @@ body {
   font-style: italic;
 }
 
-/* =================== */
-/* GALERÍA             */
-/* =================== */
 .galeria-contenedor {
   padding-top: 95px; 
   width: 100%;
@@ -167,9 +157,6 @@ body {
   width: 100%;
 }
 
-/* -------------------------- */
-/* RESPONSIVE (móvil)         */
-/* -------------------------- */
 @media (max-width: 768px) {
   .navegacion-izquierda,
   .navegacion-derecha {
