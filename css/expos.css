@@ -224,3 +224,15 @@ body {
   opacity: 0.9;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .menu-movil a.expos {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .barra-navegacion a.expos {
+    font-weight: normal;
+  }
+}

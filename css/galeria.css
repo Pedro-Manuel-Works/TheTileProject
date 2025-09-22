@@ -188,3 +188,15 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-movil a.galeria {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .barra-navegacion a.galeria {
+    font-weight: normal;
+  }
+}

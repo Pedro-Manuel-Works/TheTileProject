@@ -245,3 +245,15 @@ body {
     font-style: italic;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-movil a.sobreNosotrosMovil {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .barra-navegacion a.sobreNosotros- {
+    font-weight: normal;
+  }
+}

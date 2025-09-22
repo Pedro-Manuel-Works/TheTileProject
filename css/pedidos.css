@@ -334,3 +334,16 @@ body {
   z-index: 2000;
   cursor: none;
 }
+
+@media (max-width: 768px) {
+  .menu-movil a.boton-pedido-movil {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .barra-navegacion a.boton-pedido {
+    font-weight: normal;
+  }
+}
+

@@ -246,3 +246,9 @@ body {
     padding-right: 0;
   }
 }
+
+@media (min-width: 769px) {
+  .barra-navegacion a.expo3 {
+    font-weight: normal;
+  }
+}

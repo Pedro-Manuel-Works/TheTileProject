@@ -201,3 +201,15 @@ body {
     padding-right: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-movil a.contactoMovil {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .barra-navegacion a.boton-contacto {
+    font-weight: normal;
+  }
+}
