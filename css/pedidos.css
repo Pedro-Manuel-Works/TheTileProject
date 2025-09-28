@@ -222,7 +222,7 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: contain;
   background-color: white;
-  cursor: none; /* 🔥 Elimina el cursor SOLO aquí */
+  cursor: none; 
 }
 
 .texto-azulejo {
@@ -320,8 +320,8 @@ body {
   }
 
   .barra-superior {
-    text-align: center;
     padding-right: 0;
+    text-align: center;
   }
 }
 

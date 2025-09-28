@@ -25,7 +25,7 @@ body {
   left: 0;
   z-index: 1001;
   text-align: center;  
-  padding-right: 0; 
+  padding-right: 15px; 
 }
 
 
@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-9px);
+  transform: translateX(-17px);
 }
 
 .barra-navegacion a {
@@ -243,6 +243,11 @@ body {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: italic;
+  }
+
+  .barra-superior {
+    padding-right: 0;
+    text-align: center;
   }
 }
 

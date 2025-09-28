@@ -1,4 +1,4 @@
-/* RECUADRO DE MEDIDAS SOLO EN EL GIF/VIDEO */
+
 const azulejoUnico = document.querySelector(".azulejo-unico");
 const cursorRecuadro = document.getElementById("cursorRecuadro");
 
@@ -17,7 +17,7 @@ if (azulejoUnico && cursorRecuadro) {
   });
 }
 
-/* --- MENU HAMBURGUESA --- */
+
 const hamburguesa = document.querySelector(".hamburguesa");
 const menuMovil = document.querySelector(".menu-movil");
 
